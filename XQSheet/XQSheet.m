@@ -29,7 +29,10 @@
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
     NSString *normalStateText = [self titleForState:UIControlStateNormal];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     UIFont *font = self.font;
+#pragma clang diagnostic pop
     CGFloat textW = [self widthForSingleLineString:normalStateText font:font];
     CGFloat textH = self.frame.size.height;
     CGFloat textX = (self.frame.size.width - textW)/2.0f;
