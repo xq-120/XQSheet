@@ -9,9 +9,6 @@ A convenient sheet presented from bottom.
 
 自定义"菜单"上的文字颜色,文字字体大小等更加方便.采用block回调的方式配置按钮及执行按钮事件,让代码更加紧凑.
 
-####版本
-当前版本v1.0.0
-
 ####使用
 ```
 	//通过工厂方法实例化对象, XQSheetTypeSelect/XQSheetTypeAction两种
