@@ -16,8 +16,11 @@
 		8F1636C31E6475B3001E5A63 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636BA1E6475B3001E5A63 /* HomeTableViewController.m */; };
 		8F1636C41E6475B3001E5A63 /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636BC1E6475B3001E5A63 /* SelectTypeViewController.m */; };
 		8F1636C51E6475B3001E5A63 /* ActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636BE1E6475B3001E5A63 /* ActionTableViewController.m */; };
-		8F1636C61E6475B3001E5A63 /* XQSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636C01E6475B3001E5A63 /* XQSheet.m */; };
 		8F1636C71E6475B3001E5A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1636C11E6475B3001E5A63 /* Main.storyboard */; };
+		8F5ECBDD1E93C16200C6F473 /* XQActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBD61E93C16200C6F473 /* XQActionSheet.m */; };
+		8F5ECBDE1E93C16200C6F473 /* XQActionSheetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBD81E93C16200C6F473 /* XQActionSheetButton.m */; };
+		8F5ECBDF1E93C16200C6F473 /* XQSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBDA1E93C16200C6F473 /* XQSelectSheet.m */; };
+		8F5ECBE01E93C16200C6F473 /* XQSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBDC1E93C16200C6F473 /* XQSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +60,15 @@
 		8F1636BC1E6475B3001E5A63 /* SelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeViewController.m; sourceTree = "<group>"; };
 		8F1636BD1E6475B3001E5A63 /* ActionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTableViewController.h; sourceTree = "<group>"; };
 		8F1636BE1E6475B3001E5A63 /* ActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTableViewController.m; sourceTree = "<group>"; };
-		8F1636BF1E6475B3001E5A63 /* XQSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSheet.h; sourceTree = "<group>"; };
-		8F1636C01E6475B3001E5A63 /* XQSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSheet.m; sourceTree = "<group>"; };
 		8F1636C11E6475B3001E5A63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8F5ECBD51E93C16200C6F473 /* XQActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQActionSheet.h; sourceTree = "<group>"; };
+		8F5ECBD61E93C16200C6F473 /* XQActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQActionSheet.m; sourceTree = "<group>"; };
+		8F5ECBD71E93C16200C6F473 /* XQActionSheetButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQActionSheetButton.h; sourceTree = "<group>"; };
+		8F5ECBD81E93C16200C6F473 /* XQActionSheetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQActionSheetButton.m; sourceTree = "<group>"; };
+		8F5ECBD91E93C16200C6F473 /* XQSelectSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSelectSheet.h; sourceTree = "<group>"; };
+		8F5ECBDA1E93C16200C6F473 /* XQSelectSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSelectSheet.m; sourceTree = "<group>"; };
+		8F5ECBDB1E93C16200C6F473 /* XQSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSheet.h; sourceTree = "<group>"; };
+		8F5ECBDC1E93C16200C6F473 /* XQSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +119,7 @@
 		8F1636831E64759C001E5A63 /* XQSheetDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8F1636BF1E6475B3001E5A63 /* XQSheet.h */,
-				8F1636C01E6475B3001E5A63 /* XQSheet.m */,
+				8F5ECBD41E93C16200C6F473 /* XQSheet */,
 				8F1636B71E6475B3001E5A63 /* AppDelegate.h */,
 				8F1636B81E6475B3001E5A63 /* AppDelegate.m */,
 				8F1636B91E6475B3001E5A63 /* HomeTableViewController.h */,
@@ -153,6 +161,21 @@
 				8F1636AB1E64759C001E5A63 /* Info.plist */,
 			);
 			path = XQSheetDemoUITests;
+			sourceTree = "<group>";
+		};
+		8F5ECBD41E93C16200C6F473 /* XQSheet */ = {
+			isa = PBXGroup;
+			children = (
+				8F5ECBDB1E93C16200C6F473 /* XQSheet.h */,
+				8F5ECBDC1E93C16200C6F473 /* XQSheet.m */,
+				8F5ECBD91E93C16200C6F473 /* XQSelectSheet.h */,
+				8F5ECBDA1E93C16200C6F473 /* XQSelectSheet.m */,
+				8F5ECBD51E93C16200C6F473 /* XQActionSheet.h */,
+				8F5ECBD61E93C16200C6F473 /* XQActionSheet.m */,
+				8F5ECBD71E93C16200C6F473 /* XQActionSheetButton.h */,
+				8F5ECBD81E93C16200C6F473 /* XQActionSheetButton.m */,
+			);
+			path = XQSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,11 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5ECBDE1E93C16200C6F473 /* XQActionSheetButton.m in Sources */,
+				8F5ECBDD1E93C16200C6F473 /* XQActionSheet.m in Sources */,
 				8F1636C21E6475B3001E5A63 /* AppDelegate.m in Sources */,
 				8F1636C31E6475B3001E5A63 /* HomeTableViewController.m in Sources */,
+				8F5ECBDF1E93C16200C6F473 /* XQSelectSheet.m in Sources */,
 				8F1636C41E6475B3001E5A63 /* SelectTypeViewController.m in Sources */,
 				8F1636861E64759C001E5A63 /* main.m in Sources */,
-				8F1636C61E6475B3001E5A63 /* XQSheet.m in Sources */,
+				8F5ECBE01E93C16200C6F473 /* XQSheet.m in Sources */,
 				8F1636C51E6475B3001E5A63 /* ActionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +546,7 @@
 				8F1636B01E64759C001E5A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F1636B11E64759C001E5A63 /* Build configuration list for PBXNativeTarget "XQSheetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +555,7 @@
 				8F1636B31E64759C001E5A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F1636B41E64759C001E5A63 /* Build configuration list for PBXNativeTarget "XQSheetDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +564,7 @@
 				8F1636B61E64759C001E5A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
