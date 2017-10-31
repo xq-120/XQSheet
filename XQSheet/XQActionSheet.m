@@ -238,19 +238,13 @@ static const CGFloat sheetBtnH = 48;
     self.selectedIndex = index;
     
     NSString *title = [sender titleForState:UIControlStateNormal];
-    if (index < self.buttonActions.count)
-    {
-        void (^buttonActionBlk)(UIButton *, NSString *, NSInteger) = self.buttonActions[index];
-        if (buttonActionBlk)
-        {
-            buttonActionBlk(sender, title, index);
-        }
-    }
-    
-    [self dismissSheet];
+    void (^buttonActionBlk)(UIButton *, NSString *, NSInteger) = self.buttonActions[index];
+    [self dismissSheetWithCompletion:^{
+        buttonActionBlk(sender, title, index);
+    }];
 }
 
-- (void)showSheet
+- (void)showSheetWithCompletion:(void (^)(void))completion
 {
     self.rootWindow.hidden = NO;
     self.maskView.frame = self.rootWindow.bounds;
@@ -262,11 +256,13 @@ static const CGFloat sheetBtnH = 48;
         frame.origin.y = 0.0f;
         self.sheetBgView.frame = frame;
     } completion:^(BOOL finished) {
-        
+        if (completion) {
+            completion();
+        }
     }];
 }
 
-- (void)dismissSheet
+- (void)dismissSheetWithCompletion:(void (^)(void))completion
 {
     [UIView animateWithDuration:0.3f animations:^{
         self.maskView.alpha = 0;
@@ -274,6 +270,9 @@ static const CGFloat sheetBtnH = 48;
         r.origin.y += r.size.height;
         self.sheetBgView.frame = r;
     } completion:^(BOOL finished) {
+        if (completion) {
+            completion();
+        }
         [self.view removeFromSuperview];
         self.rootWindow.hidden = YES;
         self.rootWindow.rootViewController = nil;

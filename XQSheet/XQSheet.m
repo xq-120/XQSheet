@@ -39,12 +39,12 @@
     NSAssert(NO, @"you should override this method");
 }
 
-- (void)showSheet
+- (void)showSheetWithCompletion:(void (^)(void))completion
 {
     NSAssert(NO, @"you should override this method");
 }
 
-- (void)dismissSheet
+- (void)dismissSheetWithCompletion:(void (^)(void))completion
 {
     NSAssert(NO, @"you should override this method");
 }
@@ -53,7 +53,7 @@
 {
     [super touchesEnded:touches withEvent:event];
     
-    [self dismissSheet];
+    [self dismissSheetWithCompletion:nil];
 }
 
 @end

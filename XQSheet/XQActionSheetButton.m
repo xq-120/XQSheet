@@ -43,11 +43,6 @@
 - (CGSize)sizeForSingleLineString:(NSString *)string font:(UIFont *)font
 {
     CGSize size = [string sizeWithAttributes:@{NSFontAttributeName: font}];
-    
-    if (CGSizeEqualToSize(size, CGSizeZero)) {
-        return CGSizeZero;
-    }
-    
     CGSize ceiledSize = CGSizeMake(ceil(size.width), ceil(size.height));
     return ceiledSize;
 }
@@ -57,8 +52,8 @@
     UIImage *img = [self imageForState:UIControlStateSelected];
     
     CGSize imgSize = img.size;
-    CGFloat imgX = (self.frame.size.width - imgSize.width -10);
-    CGFloat imgY = (self.frame.size.height - imgSize.height)/2.0f;
+    CGFloat imgX = (self.frame.size.width - imgSize.width - 10);
+    CGFloat imgY = (self.frame.size.height - imgSize.height) / 2.0f;
     return CGRectMake(imgX, imgY, imgSize.width, imgSize.height);
 }
 

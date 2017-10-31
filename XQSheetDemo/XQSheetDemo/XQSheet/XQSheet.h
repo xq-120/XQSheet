@@ -19,14 +19,14 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 @property (nonatomic, strong, readonly) UILabel *sheetSubtitleLabel;
 @property (nonatomic, strong, readonly) UIButton *cancelButton;
 @property (nonatomic, strong) UIImage *selectedBtnMarkImage;
-@property (nonatomic, assign) NSInteger selectedIndex; //选中的index.默认,NSNotFound
+@property (nonatomic, assign) NSInteger selectedIndex; //选中的index.默认为NSNotFound
 
 + (instancetype)sheetWithType:(XQSheetType)type title:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle;
 
 - (void)addBtnWithTitle:(NSString *)title configHandler:(void (^)(UIButton *button))configHandler actionHandler:(void (^)(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex))handler;
 
-- (void)showSheet;
+- (void)showSheetWithCompletion:(void(^)(void))completion;
 
-- (void)dismissSheet;
+- (void)dismissSheetWithCompletion:(void(^)(void))completion;
 
 @end
