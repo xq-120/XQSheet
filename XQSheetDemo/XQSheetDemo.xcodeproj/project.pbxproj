@@ -245,7 +245,7 @@
 				TargetAttributes = {
 					8F1636801E64759C001E5A63 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 23DWX64F7P;
+						DevelopmentTeam = DBCEQJW744;
 						ProvisioningStyle = Automatic;
 					};
 					8F1636991E64759C001E5A63 = {
@@ -459,11 +459,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 23DWX64F7P;
+				DEVELOPMENT_TEAM = DBCEQJW744;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xq.www.XQSheetDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensefun.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -472,11 +472,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 23DWX64F7P;
+				DEVELOPMENT_TEAM = DBCEQJW744;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xq.www.XQSheetDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensefun.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

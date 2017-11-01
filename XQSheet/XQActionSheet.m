@@ -187,7 +187,7 @@ static const CGFloat sheetBtnH = 48;
     [btn setTitle:_cancelButtonTitle forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:17];
-    [btn addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(cancelButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     _cancelButton = btn;
     [_sheetDownBgView addSubview:btn];
     [_buttons addObject:btn];
@@ -225,6 +225,11 @@ static const CGFloat sheetBtnH = 48;
         XQActionSheetButton *btn = [self.buttons objectAtIndex:selectedIndex];
         btn.selected = YES;
     }
+}
+
+- (void)cancelButtonTapped:(UIButton *)sender
+{
+    [self dismissSheetWithCompletion:nil];
 }
 
 - (void)buttonTapped:(UIButton *)sender
