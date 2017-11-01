@@ -36,7 +36,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheet];
+        [sheet showSheetWithCompletion:nil];
     }
     
     if (indexPath.row == 1) {
@@ -62,7 +62,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheet];
+        [sheet showSheetWithCompletion:nil];
     }
     
     if (indexPath.row == 2) {
@@ -79,7 +79,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheet];
+        [sheet showSheetWithCompletion:nil];
     }
     
     if (indexPath.row == 3) {
@@ -96,7 +96,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheet];
+        [sheet showSheetWithCompletion:nil];
     }
     
     if (indexPath.row == 4) {
@@ -115,7 +115,7 @@
             [av show];
         }];
         sheet.selectedIndex = 1;
-        [sheet showSheet];
+        [sheet showSheetWithCompletion:nil];
     }
     
     if (indexPath.row == 5) {
@@ -132,7 +132,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheet];
+        [sheet showSheetWithCompletion:nil];
     }
 }
 

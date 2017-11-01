@@ -223,7 +223,7 @@ static const CGFloat sheetBtnH = 48;
     }];
 }
 
-- (void)showSheet
+- (void)showSheetWithCompletion:(void (^)(void))completion
 {
     self.rootWindow.hidden = NO;
     self.maskView.frame = self.rootWindow.bounds;
@@ -235,7 +235,9 @@ static const CGFloat sheetBtnH = 48;
         frame.origin.y = 0.0f;
         self.sheetBgView.frame = frame;
     } completion:^(BOOL finished) {
-        
+        if (completion) {
+            completion();
+        }
     }];
 }
 
