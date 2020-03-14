@@ -14,16 +14,33 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 };
 
 @interface XQSheet : UIViewController
+{
+   @protected NSMutableArray *_buttons;
+}
 
 @property (nonatomic, strong, readonly) UILabel *sheetTitleLabel;
 @property (nonatomic, strong, readonly) UILabel *sheetSubtitleLabel;
 @property (nonatomic, strong, readonly) UIButton *cancelButton;
+
+@property (nonatomic, copy) NSString *sheetTitle;
+@property (nonatomic, copy) NSString *sheetSubtitle;
+@property (nonatomic, copy) NSString *cancelButtonTitle;
+
+@property (nonatomic, strong) UIView *maskView; //蒙层
+@property (nonatomic, strong) UIView *containerView;
+@property (nonatomic, strong) UIView *labelBtnSeparateLine;
+
+// 用户添加的按钮
+//@property (nonatomic, strong, readonly) NSMutableArray *buttons;
 
 // 选中时的指示图标.
 @property (nonatomic, strong) UIImage *selectedBtnMarkImage;
 
 // 选中的index.默认为NSNotFound
 @property (nonatomic, assign) NSInteger selectedIndex;
+
+// 默认YES
+@property (nonatomic, assign) BOOL shouldDismissOnTouchOutside;
 
 /**
 创建菜单实例
@@ -56,9 +73,9 @@ note:在内部创建的window上弹出.
 /**
 弹出菜单
 
-note:使用传入的viewController弹出.
+note:基于传入的viewController弹出.
 
-@param viewController 使用viewController弹出.
+@param viewController 基于viewController弹出.
 @param completion 弹出完成回调block
 */
 - (void)showSheetWithController:(UIViewController *)viewController completion:(void(^)(void))completion;

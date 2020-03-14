@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) UIImage *selectedMarkImage;
 
+@property (nonatomic, copy) void(^didClickedBlock)(XQActionSheetButton *sender);
+
 @end

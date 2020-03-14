@@ -21,25 +21,38 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self addSubview:self.selectedMarkImageView];
+        [self addTarget:self action:@selector(didClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return self;
+}
+
+- (void)didClicked:(XQActionSheetButton *)sender
+{
+    if (self.didClickedBlock) {
+        self.didClickedBlock(sender);
+    }
 }
 
 - (void)setSelectedMarkImage:(UIImage *)selectedMarkImage {
     _selectedMarkImage = selectedMarkImage;
     
     self.selectedMarkImageView.image = selectedMarkImage;
-    CGSize imgSize = selectedMarkImage.size;
-    CGFloat imgX = (self.frame.size.width - imgSize.width - 15);
-    CGFloat imgY = (self.frame.size.height - imgSize.height) / 2.0f;
-    self.selectedMarkImageView.frame = CGRectMake(imgX, imgY, imgSize.width, imgSize.height);
 }
 
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     
     self.selectedMarkImageView.hidden = selected ? NO : YES;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGSize imgSize = self.selectedMarkImage.size;
+    CGFloat imgX = (self.frame.size.width - imgSize.width - 15);
+    CGFloat imgY = (self.frame.size.height - imgSize.height) / 2.0f;
+    self.selectedMarkImageView.frame = CGRectMake(imgX, imgY, imgSize.width, imgSize.height);
 }
 
 - (UIImageView *)selectedMarkImageView {
