@@ -9,7 +9,9 @@
 #import "XQSheet.h"
 #import "XQSelectSheet.h"
 #import "XQActionSheet.h"
-#import "XQActionSheetButton.h"
+#import "XQSheetButton.h"
+#import "XQSheetDemo-Swift.h"
+
 
 @interface XQSheet ()
 
@@ -77,7 +79,7 @@
     }
     
     for (NSInteger i = 0; i < self.buttons.count; i++) {
-        XQActionSheetButton *sheetBtn = [self.buttons objectAtIndex:i];
+        XQSheetButton *sheetBtn = [self.buttons objectAtIndex:i];
         [sheetBtn setSelectedMarkImage:self.selectedBtnMarkImage];
         if (i == self.selectedIndex) {
             sheetBtn.selected = YES;
@@ -98,7 +100,7 @@
 
 - (void)addBtnWithTitle:(NSString *)title configHandler:(void (^)(UIButton *button))configHandler actionHandler:(void (^)(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex))handler
 {
-    XQActionSheetButton *btn = [XQActionSheetButton buttonWithType:UIButtonTypeCustom];
+    XQSheetButton *btn = [XQSheetButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -110,8 +112,8 @@
     }
     
     __weak typeof(self) weakSelf = self;
-    void (^actionBlk)(XQActionSheetButton *) = ^(XQActionSheetButton *button){
-        for (XQActionSheetButton *btn in weakSelf.buttons) {
+    void (^actionBlk)(XQSheetButton *) = ^(XQSheetButton *button){
+        for (XQSheetButton *btn in weakSelf.buttons) {
             btn.selected = NO;
         }
         button.selected = YES;
@@ -136,42 +138,16 @@
 
 - (void)showSheetWithCompletion:(void (^)(void))completion
 {
-    self.rootWindow.hidden = NO;
-    self.maskView.frame = self.rootWindow.bounds;
-    self.containerView.frame = CGRectMake(0, _maskView.frame.size.height, _maskView.frame.size.width, 0);
-    
-    [UIView animateWithDuration:0.3f animations:^{
-        self.maskView.alpha = 0.4;
-        CGRect frame = self.containerView.frame;
-        frame.origin.y = 0.0f;
-        self.containerView.frame = frame;
-    } completion:^(BOOL finished) {
-        if (completion) {
-            completion();
-        }
-    }];
+    [self showWithAnimated:YES completion:completion];
 }
 
 - (void)showSheetWithController:(UIViewController *)viewController completion:(void (^)(void))completion {
-    [viewController presentViewController:self animated:YES completion:completion];
+    [self showWithViewController:viewController animated:YES completion:completion];
 }
 
 - (void)dismissSheetWithCompletion:(void (^)(void))completion
 {
-    [UIView animateWithDuration:0.3f animations:^{
-        self.maskView.alpha = 0;
-        CGRect r = self.containerView.frame;
-        r.origin.y += r.size.height;
-        self.containerView.frame = r;
-    } completion:^(BOOL finished) {
-        if (completion) {
-            completion();
-        }
-        [self.view removeFromSuperview];
-        self.rootWindow.hidden = YES;
-        self.rootWindow.rootViewController = nil;
-        self.rootWindow = nil;
-    }];
+    [self hideWithAnimated:YES completion:completion];
 }
 
 - (UIWindow *)rootWindow {
@@ -185,7 +161,7 @@
     return _rootWindow;
 }
 
-- (NSMutableArray<XQActionSheetButton *> *)buttons {
+- (NSMutableArray<XQSheetButton *> *)buttons {
     if (_buttons == nil) {
         _buttons = [NSMutableArray array];
     }

@@ -132,8 +132,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheetWithCompletion:nil];
-//        [sheet showSheetWithController:self completion:nil];
+        [sheet showSheetWithController:self completion:nil];
     }
 }
 

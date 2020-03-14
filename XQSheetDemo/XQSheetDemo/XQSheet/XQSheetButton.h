@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XQActionSheetButton : UIButton
+@interface XQSheetButton : UIButton
 
 @property (nonatomic, strong) UIImage *selectedMarkImage;
 
-@property (nonatomic, copy) void(^didClickedBlock)(XQActionSheetButton *sender);
+@property (nonatomic, copy) void(^didClickedBlock)(XQSheetButton *sender);
 
 @end

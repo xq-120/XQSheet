@@ -7,7 +7,10 @@
 //
 
 #import "XQSelectSheet.h"
-#import "XQActionSheetButton.h"
+#import "XQSheetButton.h"
+#import "XQSheetDemo-Swift.h"
+#import "XQSheetPresentAnimation.h"
+#import "XQSheetDismissAnimation.h"
 
 static const CGFloat sheetLabelH = 24;
 static const CGFloat sheetBtnH = 48;
@@ -19,6 +22,8 @@ static const CGFloat sheetBtnH = 48;
     self = [super init];
     if (self)
     {
+        self.presentAnimation = XQSheetPresentAnimation.new;
+        self.dismissAnimation = XQSheetDismissAnimation.new;
         self.sheetTitle = title;
         self.sheetSubtitle = subTitle;
         self.cancelButtonTitle = cancelButtonTitle;
@@ -29,12 +34,20 @@ static const CGFloat sheetBtnH = 48;
     return self;
 }
 
-- (void)viewWillLayoutSubviews
-{
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self layoutControllerSubviews];
+}
+
+- (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
+}
+
+- (void)layoutControllerSubviews {
     CGFloat y = 0;
-    CGFloat w = self.containerView.frame.size.width;
+    CGFloat w = self.view.frame.size.width;
     if (self.sheetTitle.length > 0)
     {
         CGFloat lableH = sheetLabelH;
@@ -45,7 +58,7 @@ static const CGFloat sheetBtnH = 48;
         self.sheetTitleLabel.frame = CGRectMake(0, y, w, lableH);
         y+=lableH;
     }
-    
+
     if (self.sheetSubtitle.length > 0)
     {
         CGFloat lableH = sheetLabelH;
@@ -57,24 +70,19 @@ static const CGFloat sheetBtnH = 48;
         y+=lableH;
     }
     
-    if (self.sheetTitle.length == 0 && self.sheetSubtitle.length == 0)
-    {
-        y = 0;
-    }
-    
     if (_buttons.count > 0)
     {
-        //绘制label和button之间的分割线
+
         CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
-        if (y > 0)
+        if (y > 0) //绘制label和button之间的分割线
         {
             self.labelBtnSeparateLine.frame = CGRectMake(0, y, w, separateLineH);
             y+=separateLineH;
         }
-        
+
         for(int i = 0; i < _buttons.count; i++)
         {
-            XQActionSheetButton *btn = _buttons[i];
+            XQSheetButton *btn = _buttons[i];
             btn.frame = CGRectMake(0, y, w, sheetBtnH);
             if (i < _buttons.count - 1)
             {
@@ -89,20 +97,25 @@ static const CGFloat sheetBtnH = 48;
             }
         }
     }
-    
+
     if (self.cancelButtonTitle.length > 0) {
         y+=5;
         self.cancelButton.frame = CGRectMake(0, y, w, sheetBtnH);
         y+=sheetBtnH;
     }
     
-    if (@available(iOS 11.0, *)) {
-        y+=self.view.safeAreaInsets.bottom;
-    }
-    
+    CGRect sheetBgViewRect = CGRectMake(0, self.view.frame.size.height - y, self.view.frame.size.width, y);
+    self.containerView.frame = sheetBgViewRect;
+}
+
+- (void)viewSafeAreaInsetsDidChange {
+    [super viewSafeAreaInsetsDidChange];
+
+    CGFloat offset = self.view.safeAreaInsets.bottom;
+
     CGRect sheetBgViewRect = self.containerView.frame;
-    sheetBgViewRect.size.height = y;
-    sheetBgViewRect.origin.y = self.maskView.frame.size.height - sheetBgViewRect.size.height;
+    sheetBgViewRect.origin.y -= offset;
+    sheetBgViewRect.size.height += offset;
     self.containerView.frame = sheetBgViewRect;
 }
 

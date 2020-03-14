@@ -18,9 +18,17 @@
 		8F1636C51E6475B3001E5A63 /* ActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636BE1E6475B3001E5A63 /* ActionTableViewController.m */; };
 		8F1636C71E6475B3001E5A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1636C11E6475B3001E5A63 /* Main.storyboard */; };
 		8F5ECBDD1E93C16200C6F473 /* XQActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBD61E93C16200C6F473 /* XQActionSheet.m */; };
-		8F5ECBDE1E93C16200C6F473 /* XQActionSheetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBD81E93C16200C6F473 /* XQActionSheetButton.m */; };
+		8F5ECBDE1E93C16200C6F473 /* XQSheetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBD81E93C16200C6F473 /* XQSheetButton.m */; };
 		8F5ECBDF1E93C16200C6F473 /* XQSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBDA1E93C16200C6F473 /* XQSelectSheet.m */; };
 		8F5ECBE01E93C16200C6F473 /* XQSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5ECBDC1E93C16200C6F473 /* XQSheet.m */; };
+		8FA746C2241D028A005F1923 /* ZAEFadeInPresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746BD241D028A005F1923 /* ZAEFadeInPresentAnimation.swift */; };
+		8FA746C3241D028A005F1923 /* UIViewController+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746BE241D028A005F1923 /* UIViewController+Present.swift */; };
+		8FA746C4241D028A005F1923 /* UIWindow+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746BF241D028A005F1923 /* UIWindow+TopViewController.swift */; };
+		8FA746C5241D028A005F1923 /* ZAEPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746C0241D028A005F1923 /* ZAEPresentationController.swift */; };
+		8FA746C6241D028A005F1923 /* ZAEFadeOutDismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746C1241D028A005F1923 /* ZAEFadeOutDismissAnimation.swift */; };
+		8FA746C9241D1B9E005F1923 /* XQSheetPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746C8241D1B9E005F1923 /* XQSheetPresentAnimation.m */; };
+		8FA746CC241D2238005F1923 /* XQSheetDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746CB241D2238005F1923 /* XQSheetDismissAnimation.m */; };
+		8FA746CF241D2BF1005F1923 /* UIView+ZASpecifiedRoundingCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA746CE241D2BF1005F1923 /* UIView+ZASpecifiedRoundingCorners.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +71,24 @@
 		8F1636C11E6475B3001E5A63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8F5ECBD51E93C16200C6F473 /* XQActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQActionSheet.h; sourceTree = "<group>"; };
 		8F5ECBD61E93C16200C6F473 /* XQActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQActionSheet.m; sourceTree = "<group>"; };
-		8F5ECBD71E93C16200C6F473 /* XQActionSheetButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQActionSheetButton.h; sourceTree = "<group>"; };
-		8F5ECBD81E93C16200C6F473 /* XQActionSheetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQActionSheetButton.m; sourceTree = "<group>"; };
+		8F5ECBD71E93C16200C6F473 /* XQSheetButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSheetButton.h; sourceTree = "<group>"; };
+		8F5ECBD81E93C16200C6F473 /* XQSheetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSheetButton.m; sourceTree = "<group>"; };
 		8F5ECBD91E93C16200C6F473 /* XQSelectSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSelectSheet.h; sourceTree = "<group>"; };
 		8F5ECBDA1E93C16200C6F473 /* XQSelectSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSelectSheet.m; sourceTree = "<group>"; };
 		8F5ECBDB1E93C16200C6F473 /* XQSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSheet.h; sourceTree = "<group>"; };
 		8F5ECBDC1E93C16200C6F473 /* XQSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSheet.m; sourceTree = "<group>"; };
+		8FA746B9241D0273005F1923 /* XQSheetDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XQSheetDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FA746BD241D028A005F1923 /* ZAEFadeInPresentAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAEFadeInPresentAnimation.swift; sourceTree = "<group>"; };
+		8FA746BE241D028A005F1923 /* UIViewController+Present.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Present.swift"; sourceTree = "<group>"; };
+		8FA746BF241D028A005F1923 /* UIWindow+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+TopViewController.swift"; sourceTree = "<group>"; };
+		8FA746C0241D028A005F1923 /* ZAEPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAEPresentationController.swift; sourceTree = "<group>"; };
+		8FA746C1241D028A005F1923 /* ZAEFadeOutDismissAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAEFadeOutDismissAnimation.swift; sourceTree = "<group>"; };
+		8FA746C7241D1B9E005F1923 /* XQSheetPresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XQSheetPresentAnimation.h; sourceTree = "<group>"; };
+		8FA746C8241D1B9E005F1923 /* XQSheetPresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQSheetPresentAnimation.m; sourceTree = "<group>"; };
+		8FA746CA241D2238005F1923 /* XQSheetDismissAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XQSheetDismissAnimation.h; sourceTree = "<group>"; };
+		8FA746CB241D2238005F1923 /* XQSheetDismissAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQSheetDismissAnimation.m; sourceTree = "<group>"; };
+		8FA746CD241D2BF1005F1923 /* UIView+ZASpecifiedRoundingCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZASpecifiedRoundingCorners.h"; sourceTree = "<group>"; };
+		8FA746CE241D2BF1005F1923 /* UIView+ZASpecifiedRoundingCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZASpecifiedRoundingCorners.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +139,7 @@
 		8F1636831E64759C001E5A63 /* XQSheetDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8FA746BC241D028A005F1923 /* ZAEPresentationController */,
 				8F5ECBD41E93C16200C6F473 /* XQSheet */,
 				8F1636B71E6475B3001E5A63 /* AppDelegate.h */,
 				8F1636B81E6475B3001E5A63 /* AppDelegate.m */,
@@ -128,6 +149,7 @@
 				8F1636BC1E6475B3001E5A63 /* SelectTypeViewController.m */,
 				8F1636BD1E6475B3001E5A63 /* ActionTableViewController.h */,
 				8F1636BE1E6475B3001E5A63 /* ActionTableViewController.m */,
+				8FA746B9241D0273005F1923 /* XQSheetDemo-Bridging-Header.h */,
 				8F1636C11E6475B3001E5A63 /* Main.storyboard */,
 				8F1636901E64759C001E5A63 /* Assets.xcassets */,
 				8F1636921E64759C001E5A63 /* LaunchScreen.storyboard */,
@@ -172,10 +194,28 @@
 				8F5ECBDA1E93C16200C6F473 /* XQSelectSheet.m */,
 				8F5ECBD51E93C16200C6F473 /* XQActionSheet.h */,
 				8F5ECBD61E93C16200C6F473 /* XQActionSheet.m */,
-				8F5ECBD71E93C16200C6F473 /* XQActionSheetButton.h */,
-				8F5ECBD81E93C16200C6F473 /* XQActionSheetButton.m */,
+				8F5ECBD71E93C16200C6F473 /* XQSheetButton.h */,
+				8F5ECBD81E93C16200C6F473 /* XQSheetButton.m */,
+				8FA746C7241D1B9E005F1923 /* XQSheetPresentAnimation.h */,
+				8FA746C8241D1B9E005F1923 /* XQSheetPresentAnimation.m */,
+				8FA746CA241D2238005F1923 /* XQSheetDismissAnimation.h */,
+				8FA746CB241D2238005F1923 /* XQSheetDismissAnimation.m */,
+				8FA746CD241D2BF1005F1923 /* UIView+ZASpecifiedRoundingCorners.h */,
+				8FA746CE241D2BF1005F1923 /* UIView+ZASpecifiedRoundingCorners.m */,
 			);
 			path = XQSheet;
+			sourceTree = "<group>";
+		};
+		8FA746BC241D028A005F1923 /* ZAEPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				8FA746BE241D028A005F1923 /* UIViewController+Present.swift */,
+				8FA746BF241D028A005F1923 /* UIWindow+TopViewController.swift */,
+				8FA746C0241D028A005F1923 /* ZAEPresentationController.swift */,
+				8FA746BD241D028A005F1923 /* ZAEFadeInPresentAnimation.swift */,
+				8FA746C1241D028A005F1923 /* ZAEFadeOutDismissAnimation.swift */,
+			);
+			path = ZAEPresentationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +286,7 @@
 					8F1636801E64759C001E5A63 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DBCEQJW744;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 					8F1636991E64759C001E5A63 = {
@@ -265,6 +306,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -312,14 +354,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F5ECBDE1E93C16200C6F473 /* XQActionSheetButton.m in Sources */,
+				8F5ECBDE1E93C16200C6F473 /* XQSheetButton.m in Sources */,
 				8F5ECBDD1E93C16200C6F473 /* XQActionSheet.m in Sources */,
+				8FA746CF241D2BF1005F1923 /* UIView+ZASpecifiedRoundingCorners.m in Sources */,
+				8FA746CC241D2238005F1923 /* XQSheetDismissAnimation.m in Sources */,
 				8F1636C21E6475B3001E5A63 /* AppDelegate.m in Sources */,
+				8FA746C9241D1B9E005F1923 /* XQSheetPresentAnimation.m in Sources */,
 				8F1636C31E6475B3001E5A63 /* HomeTableViewController.m in Sources */,
 				8F5ECBDF1E93C16200C6F473 /* XQSelectSheet.m in Sources */,
 				8F1636C41E6475B3001E5A63 /* SelectTypeViewController.m in Sources */,
+				8FA746C6241D028A005F1923 /* ZAEFadeOutDismissAnimation.swift in Sources */,
+				8FA746C3241D028A005F1923 /* UIViewController+Present.swift in Sources */,
 				8F1636861E64759C001E5A63 /* main.m in Sources */,
+				8FA746C4241D028A005F1923 /* UIWindow+TopViewController.swift in Sources */,
 				8F5ECBE01E93C16200C6F473 /* XQSheet.m in Sources */,
+				8FA746C2241D028A005F1923 /* ZAEFadeInPresentAnimation.swift in Sources */,
+				8FA746C5241D028A005F1923 /* ZAEPresentationController.swift in Sources */,
 				8F1636C51E6475B3001E5A63 /* ActionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,12 +509,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DBCEQJW744;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensefun.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XQSheetDemo/XQSheetDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -472,18 +526,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DBCEQJW744;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensefun.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XQSheetDemo/XQSheetDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		8F1636B21E64759C001E5A63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = XQSheetDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -496,6 +554,7 @@
 		8F1636B31E64759C001E5A63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = XQSheetDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -508,6 +567,7 @@
 		8F1636B51E64759C001E5A63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = XQSheetDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xq.www.XQSheetDemoUITests;
@@ -519,6 +579,7 @@
 		8F1636B61E64759C001E5A63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = XQSheetDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xq.www.XQSheetDemoUITests;

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, XQSheetType) {
-    XQSheetTypeSelect = 0,
+    XQSheetTypeSelect = 0, //
     XQSheetTypeAction
 };
 
@@ -29,9 +29,6 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 @property (nonatomic, strong) UIView *maskView; //蒙层
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, strong) UIView *labelBtnSeparateLine;
-
-// 用户添加的按钮
-//@property (nonatomic, strong, readonly) NSMutableArray *buttons;
 
 // 选中时的指示图标.
 @property (nonatomic, strong) UIImage *selectedBtnMarkImage;

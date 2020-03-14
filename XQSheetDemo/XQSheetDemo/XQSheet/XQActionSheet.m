@@ -7,10 +7,15 @@
 //
 
 #import "XQActionSheet.h"
-#import "XQActionSheetButton.h"
+#import "XQSheetButton.h"
+#import "XQSheetDemo-Swift.h"
+#import "XQSheetPresentAnimation.h"
+#import "XQSheetDismissAnimation.h"
+#import "UIView+ZASpecifiedRoundingCorners.h"
 
 static const CGFloat sheetLabelH = 24;
 static const CGFloat sheetBtnH = 48;
+static const CGFloat kLeadingGap = 10;
 
 @implementation XQActionSheet
 
@@ -19,6 +24,8 @@ static const CGFloat sheetBtnH = 48;
     self = [super init];
     if (self)
     {
+        self.presentAnimation = XQSheetPresentAnimation.new;
+        self.dismissAnimation = XQSheetDismissAnimation.new;
         self.sheetTitle = title;
         self.sheetSubtitle = subTitle;
         self.cancelButtonTitle = cancelButtonTitle;
@@ -34,15 +41,20 @@ static const CGFloat sheetBtnH = 48;
     
     self.view.backgroundColor = [UIColor clearColor];
     self.containerView.backgroundColor = [UIColor clearColor];
+    
+    [self layoutControllerSubviews];
 }
 
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
     
+    
+}
+
+- (void)layoutControllerSubviews {
     CGFloat y = 0;
-    CGFloat w = self.containerView.frame.size.width;
-    y += 2;
+    CGFloat w = self.view.frame.size.width - 2 * kLeadingGap;
     if (self.sheetTitle.length > 0)
     {
         CGFloat lableH = sheetLabelH;
@@ -50,10 +62,12 @@ static const CGFloat sheetBtnH = 48;
         {
             lableH = sheetBtnH;
         }
-        self.sheetTitleLabel.frame = CGRectMake(0, y, w, lableH);
-        y+=lableH+2;
+        self.sheetTitleLabel.frame = CGRectMake(kLeadingGap, y, w, lableH);
+        y+=lableH;
+        
+        [self.sheetTitleLabel addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
     }
-    
+
     if (self.sheetSubtitle.length > 0)
     {
         CGFloat lableH = sheetLabelH;
@@ -61,58 +75,75 @@ static const CGFloat sheetBtnH = 48;
         {
             lableH = sheetBtnH;
         }
-        self.sheetSubtitleLabel.frame = CGRectMake(0, y, w, lableH);
-        y+=lableH+2;
-    }
-    
-    if (self.sheetTitle.length == 0 && self.sheetSubtitle.length == 0)
-    {
-        y = 0;
-    }
-    
-    CGFloat sheetUpBgViewH = 0;
-    if (_buttons.count > 1) //buttons里除了默认的"取消"按钮外,还有其他的按钮
-    {
-        //绘制label和button之间的分割线
-        CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
-        if (y > 2)
-        {
-            self.labelBtnSeparateLine.frame = CGRectMake(0, y, w, separateLineH);
-            y+=separateLineH+2;
-        }
+        self.sheetSubtitleLabel.frame = CGRectMake(kLeadingGap, y, w, lableH);
+        y+=lableH;
         
+        if (self.sheetTitle.length == 0)
+        {
+            [self.sheetSubtitleLabel addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+        }
+    }
+
+    if (_buttons.count > 0)
+    {
+
+        CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
+        if (y > 0) //绘制label和button之间的分割线
+        {
+            self.labelBtnSeparateLine.frame = CGRectMake(kLeadingGap, y, w, separateLineH);
+            y+=separateLineH;
+        }
+
         for(int i = 0; i < _buttons.count; i++)
         {
-            XQActionSheetButton *btn = _buttons[i];
-            [btn setSelectedMarkImage:self.selectedBtnMarkImage];
-            btn.frame = CGRectMake(0, y, w, sheetBtnH);
-            if (i < _buttons.count - 2)
+            XQSheetButton *btn = _buttons[i];
+            btn.frame = CGRectMake(kLeadingGap, y, w, sheetBtnH);
+            if (i < _buttons.count - 1)
             {
+                if (i == 0 && y <= 0) {
+                    [btn addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+                }
+                
                 y+=sheetBtnH;
                 UIView *separateLine = [self.view viewWithTag:1000+i];
-                separateLine.frame = CGRectMake(0, y, w, separateLineH);
+                separateLine.frame = CGRectMake(kLeadingGap, y, w, separateLineH);
                 y+=separateLineH;
             }
-            else if (i == _buttons.count - 2) //最后一个按钮不绘制分割线
+            else if (i == _buttons.count - 1) //最后一个按钮不绘制分割线
             {
-                y+=sheetBtnH+10;
+                y+=sheetBtnH;
+                
+                [btn addRoundingCorners:UIRectCornerBottomLeft | UIRectCornerBottomRight cornerRadii:CGSizeMake(10, 10)];
             }
         }
-        sheetUpBgViewH = y-10;
     }
-    else
-    {
-        sheetUpBgViewH = y;
+
+    if (self.cancelButtonTitle.length > 0) {
+        y+=kLeadingGap;
+        self.cancelButton.frame = CGRectMake(kLeadingGap, y, w, sheetBtnH);
+        self.cancelButton.layer.cornerRadius = 10;
+        self.cancelButton.layer.masksToBounds = YES;
+        y+=sheetBtnH;
     }
     
-    self.cancelButton.frame = CGRectMake(0, 0, w, sheetBtnH);
+    y+=kLeadingGap;
     
+    CGRect sheetBgViewRect = CGRectMake(0, self.view.frame.size.height - y, self.view.frame.size.width, y);
+    self.containerView.frame = sheetBgViewRect;
+}
+
+- (void)viewSafeAreaInsetsDidChange {
+    [super viewSafeAreaInsetsDidChange];
+
+    CGFloat safeBottom = self.view.safeAreaInsets.bottom;
+    CGFloat offset = safeBottom;
+    if (safeBottom > 0) {
+        offset -= kLeadingGap;
+    }
+
     CGRect sheetBgViewRect = self.containerView.frame;
-    sheetBgViewRect.size.height = sheetUpBgViewH + 10 + sheetBtnH + 15;
-    if (@available(iOS 11.0, *)) {
-        sheetBgViewRect.size.height += self.view.safeAreaInsets.bottom;
-    }
-    sheetBgViewRect.origin.y = self.maskView.frame.size.height - sheetBgViewRect.size.height;
+    sheetBgViewRect.origin.y -= offset;
+    sheetBgViewRect.size.height += offset;
     self.containerView.frame = sheetBgViewRect;
 }
 

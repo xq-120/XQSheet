@@ -6,15 +6,15 @@
 //  Copyright © 2017年 xuequan. All rights reserved.
 //
 
-#import "XQActionSheetButton.h"
+#import "XQSheetButton.h"
 
-@interface XQActionSheetButton ()
+@interface XQSheetButton ()
 
 @property (nonatomic, strong) UIImageView *selectedMarkImageView;
 
 @end
 
-@implementation XQActionSheetButton
+@implementation XQSheetButton
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -27,7 +27,7 @@
     return self;
 }
 
-- (void)didClicked:(XQActionSheetButton *)sender
+- (void)didClicked:(XQSheetButton *)sender
 {
     if (self.didClickedBlock) {
         self.didClickedBlock(sender);
