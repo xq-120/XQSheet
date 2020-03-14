@@ -8,65 +8,48 @@
 
 #import "XQActionSheetButton.h"
 
+@interface XQActionSheetButton ()
+
+@property (nonatomic, strong) UIImageView *selectedMarkImageView;
+
+@end
+
 @implementation XQActionSheetButton
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addTarget:self action:@selector(didClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:self.selectedMarkImageView];
     }
     
     return self;
 }
 
-- (CGRect)titleRectForContentRect:(CGRect)contentRect
-{
-    NSString *normalStateText = [self titleForState:UIControlStateNormal];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    UIFont *font = self.font;
-#pragma clang diagnostic pop
-    CGFloat textW = [self widthForSingleLineString:normalStateText font:font];
-    CGFloat textH = self.frame.size.height;
-    CGFloat textX = (self.frame.size.width - textW)/2.0f;
+- (void)setSelectedMarkImage:(UIImage *)selectedMarkImage {
+    _selectedMarkImage = selectedMarkImage;
     
-    return CGRectMake(textX, 0, textW, textH);
-}
-
-- (CGFloat)widthForSingleLineString:(NSString *)string font:(UIFont *)font
-{
-    CGSize size = [self sizeForSingleLineString:string font:font];
-    return size.width;
-}
-
-- (CGSize)sizeForSingleLineString:(NSString *)string font:(UIFont *)font
-{
-    CGSize size = [string sizeWithAttributes:@{NSFontAttributeName: font}];
-    CGSize ceiledSize = CGSizeMake(ceil(size.width), ceil(size.height));
-    return ceiledSize;
-}
-
-- (CGRect)imageRectForContentRect:(CGRect)contentRect
-{
-    UIImage *img = [self imageForState:UIControlStateSelected];
-    
-    CGSize imgSize = img.size;
-    CGFloat imgX = (self.frame.size.width - imgSize.width - 10);
+    self.selectedMarkImageView.image = selectedMarkImage;
+    CGSize imgSize = selectedMarkImage.size;
+    CGFloat imgX = (self.frame.size.width - imgSize.width - 15);
     CGFloat imgY = (self.frame.size.height - imgSize.height) / 2.0f;
-    return CGRectMake(imgX, imgY, imgSize.width, imgSize.height);
+    self.selectedMarkImageView.frame = CGRectMake(imgX, imgY, imgSize.width, imgSize.height);
 }
 
-- (void)setDidClickedBlock:(void (^)(UIButton *))didClickedBlock
-{
-    _didClickedBlock = didClickedBlock;
+- (void)setSelected:(BOOL)selected {
+    [super setSelected:selected];
+    
+    self.selectedMarkImageView.hidden = selected ? NO : YES;
 }
 
-- (void)didClicked:(UIButton *)sender
-{
-    if (self.didClickedBlock) {
-        self.didClickedBlock(sender);
+- (UIImageView *)selectedMarkImageView {
+    if (_selectedMarkImageView == nil) {
+        UIImageView *imgView = [[UIImageView alloc] init];
+        imgView.contentMode = UIViewContentModeScaleAspectFill;
+        imgView.hidden = YES; //默认隐藏.
+        _selectedMarkImageView = imgView;
     }
+    return _selectedMarkImageView;
 }
 
 @end

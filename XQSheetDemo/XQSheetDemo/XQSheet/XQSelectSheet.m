@@ -17,81 +17,6 @@ static const CGFloat sheetBtnH = 48;
 @synthesize sheetSubtitleLabel = _sheetSubtitleLabel;
 @synthesize cancelButton = _cancelButton;
 
-- (void)viewWillLayoutSubviews
-{
-    [super viewWillLayoutSubviews];
-    
-    CGFloat y = 0;
-    CGFloat w = self.sheetBgView.frame.size.width;
-    if (_sheetTitle.length > 0)
-    {
-        CGFloat lableH = sheetLabelH;
-        if (_sheetSubtitle.length == 0)
-        {
-            lableH = sheetBtnH;
-        }
-        _sheetTitleLabel.frame = CGRectMake(0, y, w, lableH);
-        y+=lableH;
-    }
-    
-    if (_sheetSubtitle.length > 0)
-    {
-        CGFloat lableH = sheetLabelH;
-        if (self.sheetTitle.length == 0)
-        {
-            lableH = sheetBtnH;
-        }
-        self.sheetSubtitleLabel.frame = CGRectMake(0, y, w, lableH);
-        y+=lableH;
-    }
-    
-    if (_sheetTitle.length == 0 && _sheetSubtitle.length == 0)
-    {
-        y = 0;
-    }
-    
-    if (self.buttons.count > 0)
-    {
-        //绘制label和button之间的分割线
-        CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
-        if (y > 0)
-        {
-            _labelBtnSeparateLine.frame = CGRectMake(0, y, w, separateLineH);
-            y+=separateLineH;
-        }
-        
-        for(int i = 0; i < self.buttons.count; i++) //不包含可能有的"取消"按钮
-        {
-            UIButton *btn = self.buttons[i];
-            [btn setImage:self.selectedBtnMarkImage forState:UIControlStateSelected];
-            btn.frame = CGRectMake(0, y, w, sheetBtnH);
-            if (i < self.buttons.count - 1)
-            {
-                y+=sheetBtnH;
-                UIView *separateLine = self.separateLines[i];
-                separateLine.frame = CGRectMake(0, y, w, separateLineH);
-                y+=separateLineH;
-            }
-            else if (i == self.buttons.count - 1) //最后一个按钮不绘制分割线
-            {
-                y+=sheetBtnH;
-            }
-        }
-    }
-    
-    if (_cancelButton) {
-        y+=5;
-        _cancelButton.frame = CGRectMake(0, y, w, sheetBtnH);
-        y+=sheetBtnH;
-    }
-    
-    
-    CGRect sheetBgViewRect = self.sheetBgView.frame;
-    sheetBgViewRect.size.height = y;
-    sheetBgViewRect.origin.y = self.maskView.frame.size.height - sheetBgViewRect.size.height;
-    self.sheetBgView.frame = sheetBgViewRect;
-}
-
 + (instancetype)selectSheetControllerWithTitle:(nullable NSString *)title subTitle:(nullable NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle
 {
     XQSelectSheet *selectSheet = [[[self class] alloc] initWithTitle:title subTitle:subTitle cancelButtonTitle:cancelButtonTitle];
@@ -169,6 +94,84 @@ static const CGFloat sheetBtnH = 48;
         _cancelButton = btn;
         [_sheetBgView addSubview:btn];
     }
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    
+    CGFloat y = 0;
+    CGFloat w = self.sheetBgView.frame.size.width;
+    if (_sheetTitle.length > 0)
+    {
+        CGFloat lableH = sheetLabelH;
+        if (_sheetSubtitle.length == 0)
+        {
+            lableH = sheetBtnH;
+        }
+        _sheetTitleLabel.frame = CGRectMake(0, y, w, lableH);
+        y+=lableH;
+    }
+    
+    if (_sheetSubtitle.length > 0)
+    {
+        CGFloat lableH = sheetLabelH;
+        if (self.sheetTitle.length == 0)
+        {
+            lableH = sheetBtnH;
+        }
+        self.sheetSubtitleLabel.frame = CGRectMake(0, y, w, lableH);
+        y+=lableH;
+    }
+    
+    if (_sheetTitle.length == 0 && _sheetSubtitle.length == 0)
+    {
+        y = 0;
+    }
+    
+    if (self.buttons.count > 0)
+    {
+        //绘制label和button之间的分割线
+        CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
+        if (y > 0)
+        {
+            _labelBtnSeparateLine.frame = CGRectMake(0, y, w, separateLineH);
+            y+=separateLineH;
+        }
+        
+        for(int i = 0; i < self.buttons.count; i++) //不包含可能有的"取消"按钮
+        {
+            XQActionSheetButton *btn = self.buttons[i];
+            [btn setSelectedMarkImage:self.selectedBtnMarkImage];
+            btn.frame = CGRectMake(0, y, w, sheetBtnH);
+            if (i < self.buttons.count - 1)
+            {
+                y+=sheetBtnH;
+                UIView *separateLine = self.separateLines[i];
+                separateLine.frame = CGRectMake(0, y, w, separateLineH);
+                y+=separateLineH;
+            }
+            else if (i == self.buttons.count - 1) //最后一个按钮不绘制分割线
+            {
+                y+=sheetBtnH;
+            }
+        }
+    }
+    
+    if (_cancelButton) {
+        y+=5;
+        _cancelButton.frame = CGRectMake(0, y, w, sheetBtnH);
+        y+=sheetBtnH;
+    }
+    
+    if (@available(iOS 11.0, *)) {
+        y+=self.view.safeAreaInsets.bottom;
+    }
+    
+    CGRect sheetBgViewRect = self.sheetBgView.frame;
+    sheetBgViewRect.size.height = y;
+    sheetBgViewRect.origin.y = self.maskView.frame.size.height - sheetBgViewRect.size.height;
+    self.sheetBgView.frame = sheetBgViewRect;
 }
 
 - (void)addBtnWithTitle:(NSString *)title configHandler:(void (^)(UIButton *button))configHandler actionHandler:(void (^)(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex))handler

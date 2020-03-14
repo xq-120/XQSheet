@@ -70,8 +70,8 @@ static const CGFloat sheetBtnH = 48;
         
         for(int i = 0; i < self.buttons.count; i++)
         {
-            UIButton *btn = self.buttons[i];
-            [btn setImage:self.selectedBtnMarkImage forState:UIControlStateSelected];
+            XQActionSheetButton *btn = self.buttons[i];
+            [btn setSelectedMarkImage:self.selectedBtnMarkImage];
             btn.frame = CGRectMake(0, y, w, sheetBtnH);
             if (i < self.buttons.count - 2)
             {
@@ -96,11 +96,13 @@ static const CGFloat sheetBtnH = 48;
     
     self.sheetUpBgView.frame = CGRectMake(0, 0, w, sheetUpBgViewH);
     CGFloat sheetDownBgViewY = sheetUpBgViewH + 10;
-    
     self.sheetDownBgView.frame = CGRectMake(0, sheetDownBgViewY, w, sheetBtnH);
     
     CGRect sheetBgViewRect = self.sheetBgView.frame;
     sheetBgViewRect.size.height = sheetUpBgViewH + 10 + sheetBtnH + 15;
+    if (@available(iOS 11.0, *)) {
+        sheetBgViewRect.size.height += self.view.safeAreaInsets.bottom;
+    }
     sheetBgViewRect.origin.y = self.maskView.frame.size.height - sheetBgViewRect.size.height;
     self.sheetBgView.frame = sheetBgViewRect;
 }
@@ -183,7 +185,7 @@ static const CGFloat sheetBtnH = 48;
     _separateLines = [NSMutableArray arrayWithCapacity:1];
     _buttonActions = [NSMutableArray arrayWithCapacity:1];
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    XQActionSheetButton *btn = [XQActionSheetButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:_cancelButtonTitle forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:17];

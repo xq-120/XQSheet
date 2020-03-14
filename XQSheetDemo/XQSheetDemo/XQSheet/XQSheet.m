@@ -44,6 +44,10 @@
     NSAssert(NO, @"you should override this method");
 }
 
+- (void)showSheetWithController:(UIViewController *)viewController completion:(void (^)(void))completion {
+    NSAssert(NO, @"you should override this method");
+}
+
 - (void)dismissSheetWithCompletion:(void (^)(void))completion
 {
     NSAssert(NO, @"you should override this method");
