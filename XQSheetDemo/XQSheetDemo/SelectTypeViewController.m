@@ -7,7 +7,7 @@
 //
 
 #import "SelectTypeViewController.h"
-#import "XQSheet.h"
+#import <XQSheet.h>
 
 @interface SelectTypeViewController ()
 

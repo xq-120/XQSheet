@@ -1,0 +1,24 @@
+PODS:
+  - JKPresentationController (1.0.0)
+  - XQSheet (1.0.6):
+    - JKPresentationController (~> 1.0.0)
+
+DEPENDENCIES:
+  - JKPresentationController (~> 1.0.0)
+  - XQSheet (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - JKPresentationController
+
+EXTERNAL SOURCES:
+  XQSheet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JKPresentationController: f8886b6ce8a803d8a54711ffaddc94d10cd48fe2
+  XQSheet: 960e40668a541d8281db67baea6869be4dd6bbb8
+
+PODFILE CHECKSUM: afeda27a9e2de7ae146209da64a59bd348ec7e69
+
+COCOAPODS: 1.8.4
