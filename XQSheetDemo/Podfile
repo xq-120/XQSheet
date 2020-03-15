@@ -6,6 +6,6 @@ use_frameworks!
 target 'XQSheetDemo' do
 
 pod 'JKPresentationController', '~> 1.0.0'
-pod 'XQSheet', :path => '../'
+pod 'XQSheet', '~> 2.0.0'
 
 end
