@@ -2,13 +2,13 @@
 //  ZAEFadeOutDismissAnimation.swift
 //  UIPresentationController_demo
 //
-//  Created by xuequan on 2019/4/7.
-//  Copyright © 2019 zhenai. All rights reserved.
+//  Created by jekyttt on 2019/4/7.
+//  Copyright © 2019 jekyttt. All rights reserved.
 //
 
 import UIKit
 
-class ZAEFadeOutDismissAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+class JKFadeOutDismissAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.25
     }

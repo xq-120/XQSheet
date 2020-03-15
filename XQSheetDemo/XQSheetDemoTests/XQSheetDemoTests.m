@@ -2,8 +2,8 @@
 //  XQSheetDemoTests.m
 //  XQSheetDemoTests
 //
-//  Created by xuequan on 2017/2/27.
-//  Copyright © 2017年 xuequan. All rights reserved.
+//  Created by jekyttt on 2017/2/27.
+//  Copyright © 2017年 jekyttt. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

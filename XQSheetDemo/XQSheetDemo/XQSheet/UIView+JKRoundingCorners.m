@@ -1,16 +1,16 @@
 //
-//  UIView+ZASpecifiedRoundingCorners.m
-//  zhenaiwang
+//  UIView+JKRoundingCorners.m
+//  XQSheetDemo
 //
-//  Created by 刘志伟 on 2017/8/9.
-//  Copyright © 2017年 ZhenAiWang. All rights reserved.
+//  Created by jekyttt on 2020/3/14.
+//  Copyright © 2020 jekyttt. All rights reserved.
 //
 
-#import "UIView+ZASpecifiedRoundingCorners.h"
+#import "UIView+JKRoundingCorners.h"
 
-@implementation UIView (ZASpecifiedRoundingCorners)
+@implementation UIView (JKRoundingCorners)
 
-- (void)addRoundingCorners:(UIRectCorner)rectCorner cornerRadii:(CGSize)cornerRadii {
+- (void)jk_addRoundingCorners:(UIRectCorner)rectCorner cornerRadii:(CGSize)cornerRadii {
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCorner cornerRadii:cornerRadii];
     
@@ -21,7 +21,7 @@
     self.layer.mask = maskLayer;
 }
 
-- (void)addRoundingCorners:(UIRectCorner)rectCorner cornerRadii:(CGSize)cornerRadii borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth {
+- (void)jk_addRoundingCorners:(UIRectCorner)rectCorner cornerRadii:(CGSize)cornerRadii borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth {
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCorner cornerRadii:cornerRadii];
     

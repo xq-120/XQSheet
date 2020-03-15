@@ -2,8 +2,8 @@
 //  XQSheetDismissAnimation.h
 //  XQSheetDemo
 //
-//  Created by xuequan on 2020/3/14.
-//  Copyright © 2020 xuequan. All rights reserved.
+//  Created by jekyttt on 2020/3/14.
+//  Copyright © 2020 jekyttt. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

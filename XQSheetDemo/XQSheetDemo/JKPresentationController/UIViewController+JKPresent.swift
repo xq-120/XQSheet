@@ -2,8 +2,8 @@
 //  UIViewController+Present.swift
 //  EmotionCounsel
 //
-//  Created by 薛权 on 2019/6/10.
-//  Copyright © 2019 zhenai. All rights reserved.
+//  Created by jekyttt on 2019/6/10.
+//  Copyright © 2019 jekyttt. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ private struct AssociatedKeys {
 
 extension UIViewController: UIViewControllerTransitioningDelegate {
     //存储型属性
-    @objc var presentAnimation: UIViewControllerAnimatedTransitioning? {
+    @objc var jk_presentAnimation: UIViewControllerAnimatedTransitioning? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.kPresentAnimationKey) as? UIViewControllerAnimatedTransitioning
         }
@@ -25,7 +25,7 @@ extension UIViewController: UIViewControllerTransitioningDelegate {
         }
     }
     
-    @objc var dismissAnimation: UIViewControllerAnimatedTransitioning? {
+    @objc var jk_dismissAnimation: UIViewControllerAnimatedTransitioning? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.kDismissAnimationKey) as? UIViewControllerAnimatedTransitioning
         }
@@ -34,7 +34,7 @@ extension UIViewController: UIViewControllerTransitioningDelegate {
         }
     }
     
-    @objc var alertWindow: UIWindow! {
+    @objc var jk_alertWindow: UIWindow! {
         get {
             var aWindow = objc_getAssociatedObject(self, &AssociatedKeys.kAlertWindowKey) as? UIWindow
             if aWindow == nil {
@@ -53,30 +53,30 @@ extension UIViewController: UIViewControllerTransitioningDelegate {
     
     @objc convenience init(presentAnimation: UIViewControllerAnimatedTransitioning?, dismissAnimation: UIViewControllerAnimatedTransitioning?) {
         self.init()
-        self.presentAnimation = presentAnimation
-        self.dismissAnimation = dismissAnimation
+        self.jk_presentAnimation = presentAnimation
+        self.jk_dismissAnimation = dismissAnimation
     }
     
     // 弹出页面,在新的window上弹出.call hide() to close.
-    @objc func show(withAnimated animated: Bool = true, completion: (() -> Void)? = nil) {
+    @objc func jk_show(withAnimated animated: Bool = true, completion: (() -> Void)? = nil) {
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
-        self.alertWindow.isHidden = false
-        self.alertWindow.rootViewController?.present(self, animated: animated, completion: completion)
+        self.jk_alertWindow.isHidden = false
+        self.jk_alertWindow.rootViewController?.present(self, animated: animated, completion: completion)
     }
     
     // 弹出页面,在viewController上弹出.call hide() to close.
-    @objc func show(withViewController viewController: UIViewController, animated: Bool = true, completion: (() -> Void)? = nil) {
+    @objc func jk_show(withViewController viewController: UIViewController, animated: Bool = true, completion: (() -> Void)? = nil) {
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
         viewController.present(self, animated: animated, completion: completion)
     }
     
     // 关闭页面.
-    @objc func hide(withAnimated animated: Bool = true, completion: (() -> Void)? = nil) {
+    @objc func jk_hide(withAnimated animated: Bool = true, completion: (() -> Void)? = nil) {
         self.dismiss(animated: animated) { [weak self] in
-            self?.alertWindow.isHidden = true
-            self?.alertWindow = nil
+            self?.jk_alertWindow.isHidden = true
+            self?.jk_alertWindow = nil
             completion?()
         }
     }
@@ -84,32 +84,32 @@ extension UIViewController: UIViewControllerTransitioningDelegate {
     // MARK: - UIViewControllerTransitioningDelegate
     
     public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return presentAnimation
+        return jk_presentAnimation
     }
     
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return dismissAnimation
+        return jk_dismissAnimation
     }
     
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        let present = ZAEPresentationController.init(presentedViewController: presented, presenting: presenting)
+        let present = JKPresentationController.init(presentedViewController: presented, presenting: presenting)
         return present
     }
 }
 
-@objc protocol ZAEPresentedViewProtocol  {
+@objc protocol JKPresentedViewProtocol  {
     /** 弹窗视图的frame */
-    var presentedViewFrame : CGRect {get}
+    var jk_presentedViewFrame : CGRect {get}
     
-    /** 点击弹窗视图外的区域是否自动关闭弹窗.注意:如果弹窗完全覆盖蒙层则该属性无效. */
-    var shouldDismissOnTouchOutside: Bool {get}
+    /** 当点击到默认蒙层时是否自动关闭弹窗.注意:如果弹窗完全覆盖蒙层则该属性无效. */
+    var jk_shouldDismissOnTouchBackView: Bool {get}
     
-    /** 蒙层的背景色 */
-    var backViewBgColor: UIColor {get}
+    /** 默认蒙层的背景色.return clearColor to use your custom mask view if needed. */
+    var jk_backViewBgColor: UIColor {get}
 }
 
-extension UIViewController: ZAEPresentedViewProtocol {
-    var presentedViewFrame: CGRect { return UIScreen.main.bounds }
-    var shouldDismissOnTouchOutside: Bool { return true}
-    var backViewBgColor: UIColor {return UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)}
+extension UIViewController: JKPresentedViewProtocol {
+    var jk_presentedViewFrame: CGRect { return UIScreen.main.bounds }
+    var jk_shouldDismissOnTouchBackView: Bool { return true }
+    var jk_backViewBgColor: UIColor { return UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5) }
 }

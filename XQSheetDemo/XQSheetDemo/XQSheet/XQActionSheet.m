@@ -2,8 +2,8 @@
 //  XQActionSheet.m
 //  XQSheetDemo
 //
-//  Created by xuequan on 2017/4/4.
-//  Copyright © 2017年 xuequan. All rights reserved.
+//  Created by jekyttt on 2017/4/4.
+//  Copyright © 2017年 jekyttt. All rights reserved.
 //
 
 #import "XQActionSheet.h"
@@ -11,7 +11,7 @@
 #import "XQSheetDemo-Swift.h"
 #import "XQSheetPresentAnimation.h"
 #import "XQSheetDismissAnimation.h"
-#import "UIView+ZASpecifiedRoundingCorners.h"
+#import "UIView+JKRoundingCorners.h"
 
 static const CGFloat sheetLabelH = 24;
 static const CGFloat sheetBtnH = 48;
@@ -24,8 +24,8 @@ static const CGFloat kLeadingGap = 10;
     self = [super init];
     if (self)
     {
-        self.presentAnimation = XQSheetPresentAnimation.new;
-        self.dismissAnimation = XQSheetDismissAnimation.new;
+        self.jk_presentAnimation = XQSheetPresentAnimation.new;
+        self.jk_dismissAnimation = XQSheetDismissAnimation.new;
         self.sheetTitle = title;
         self.sheetSubtitle = subTitle;
         self.cancelButtonTitle = cancelButtonTitle;
@@ -65,7 +65,7 @@ static const CGFloat kLeadingGap = 10;
         self.sheetTitleLabel.frame = CGRectMake(kLeadingGap, y, w, lableH);
         y+=lableH;
         
-        [self.sheetTitleLabel addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+        [self.sheetTitleLabel jk_addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
     }
 
     if (self.sheetSubtitle.length > 0)
@@ -80,7 +80,7 @@ static const CGFloat kLeadingGap = 10;
         
         if (self.sheetTitle.length == 0)
         {
-            [self.sheetSubtitleLabel addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+            [self.sheetSubtitleLabel jk_addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
         }
     }
 
@@ -101,7 +101,7 @@ static const CGFloat kLeadingGap = 10;
             if (i < _buttons.count - 1)
             {
                 if (i == 0 && y <= 0) {
-                    [btn addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+                    [btn jk_addRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
                 }
                 
                 y+=sheetBtnH;
@@ -113,7 +113,7 @@ static const CGFloat kLeadingGap = 10;
             {
                 y+=sheetBtnH;
                 
-                [btn addRoundingCorners:UIRectCornerBottomLeft | UIRectCornerBottomRight cornerRadii:CGSizeMake(10, 10)];
+                [btn jk_addRoundingCorners:UIRectCornerBottomLeft | UIRectCornerBottomRight cornerRadii:CGSizeMake(10, 10)];
             }
         }
     }

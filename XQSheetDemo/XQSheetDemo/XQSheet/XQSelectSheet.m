@@ -2,8 +2,8 @@
 //  XQSelectSheet.m
 //  XQSheetDemo
 //
-//  Created by xuequan on 2017/4/4.
-//  Copyright © 2017年 xuequan. All rights reserved.
+//  Created by jekyttt on 2017/4/4.
+//  Copyright © 2017年 jekyttt. All rights reserved.
 //
 
 #import "XQSelectSheet.h"
@@ -22,8 +22,8 @@ static const CGFloat sheetBtnH = 48;
     self = [super init];
     if (self)
     {
-        self.presentAnimation = XQSheetPresentAnimation.new;
-        self.dismissAnimation = XQSheetDismissAnimation.new;
+        self.jk_presentAnimation = XQSheetPresentAnimation.new;
+        self.jk_dismissAnimation = XQSheetDismissAnimation.new;
         self.sheetTitle = title;
         self.sheetSubtitle = subTitle;
         self.cancelButtonTitle = cancelButtonTitle;

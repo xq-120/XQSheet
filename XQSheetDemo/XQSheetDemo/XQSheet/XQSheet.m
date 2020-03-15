@@ -2,8 +2,8 @@
 //  XQSheet.m
 //  XQActionSheet
 //
-//  Created by xuequan on 2017/2/27.
-//  Copyright © 2017年 xuequan. All rights reserved.
+//  Created by jekyttt on 2017/2/27.
+//  Copyright © 2017年 jekyttt. All rights reserved.
 //
 
 #import "XQSheet.h"
@@ -14,8 +14,6 @@
 
 
 @interface XQSheet ()
-
-@property (nonatomic, strong) UIWindow *rootWindow;
 
 @property (nonatomic, strong, readwrite) UILabel *sheetTitleLabel;
 @property (nonatomic, strong, readwrite) UILabel *sheetSubtitleLabel;
@@ -40,11 +38,6 @@
         sheet = [[XQActionSheet alloc] initWithTitle:title subTitle:subTitle cancelButtonTitle:cancelButtonTitle];
     }
     return sheet;
-}
-
-- (CGRect)mainScreenFrame
-{
-    return [UIApplication sharedApplication].keyWindow.bounds;
 }
 
 - (void)viewDidLoad {
@@ -138,27 +131,16 @@
 
 - (void)showSheetWithCompletion:(void (^)(void))completion
 {
-    [self showWithAnimated:YES completion:completion];
+    [self jk_showWithAnimated:YES completion:completion];
 }
 
 - (void)showSheetWithController:(UIViewController *)viewController completion:(void (^)(void))completion {
-    [self showWithViewController:viewController animated:YES completion:completion];
+    [self jk_showWithViewController:viewController animated:YES completion:completion];
 }
 
 - (void)dismissSheetWithCompletion:(void (^)(void))completion
 {
-    [self hideWithAnimated:YES completion:completion];
-}
-
-- (UIWindow *)rootWindow {
-    if (_rootWindow == nil) {
-        UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[self mainScreenFrame]];
-        alertWindow.windowLevel = UIWindowLevelAlert;
-        alertWindow.backgroundColor = [UIColor clearColor];
-        alertWindow.rootViewController = self;
-        _rootWindow = alertWindow;
-    }
-    return _rootWindow;
+    [self jk_hideWithAnimated:YES completion:completion];
 }
 
 - (NSMutableArray<XQSheetButton *> *)buttons {
