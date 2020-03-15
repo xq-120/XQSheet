@@ -80,8 +80,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #s.source       = { :git => "https://github.com/xq-120/XQSheet.git", :tag => s.version.to_s }
-  s.source       = { :git => "./XQSheet/", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/xq-120/XQSheet.git", :tag => s.version.to_s }
+  #s.source       = { :git => "./XQSheet/", :tag => s.version.to_s }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
