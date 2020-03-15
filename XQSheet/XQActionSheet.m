@@ -39,7 +39,6 @@ static const CGFloat kLeadingGap = 10;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor clearColor];
     self.containerView.backgroundColor = [UIColor clearColor];
     
     [self layoutControllerSubviews];
@@ -90,7 +89,8 @@ static const CGFloat kLeadingGap = 10;
         CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
         if (y > 0) //绘制label和button之间的分割线
         {
-            self.labelBtnSeparateLine.frame = CGRectMake(kLeadingGap, y, w, separateLineH);
+            UIView *separateLine = [self.view viewWithTag:555];
+            separateLine.frame = CGRectMake(kLeadingGap, y, w, separateLineH);
             y+=separateLineH;
         }
 

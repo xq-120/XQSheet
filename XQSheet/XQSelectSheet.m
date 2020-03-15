@@ -76,7 +76,8 @@ static const CGFloat sheetBtnH = 48;
         CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
         if (y > 0) //绘制label和button之间的分割线
         {
-            self.labelBtnSeparateLine.frame = CGRectMake(0, y, w, separateLineH);
+            UIView *separateLine = [self.view viewWithTag:555];
+            separateLine.frame = CGRectMake(0, y, w, separateLineH);
             y+=separateLineH;
         }
 

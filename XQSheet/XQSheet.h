@@ -26,9 +26,7 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 @property (nonatomic, copy) NSString *sheetSubtitle;
 @property (nonatomic, copy) NSString *cancelButtonTitle;
 
-@property (nonatomic, strong) UIView *maskView; //蒙层
-@property (nonatomic, strong) UIView *containerView;
-@property (nonatomic, strong) UIView *labelBtnSeparateLine;
+@property (nonatomic, strong, readonly) UIView *containerView;
 
 // 选中时的指示图标.
 @property (nonatomic, strong) UIImage *selectedBtnMarkImage;

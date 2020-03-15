@@ -25,7 +25,7 @@
 @implementation XQSheet
 
 - (void)dealloc {
-    NSLog(@"%@销毁", self);
+    
 }
 
 + (instancetype)sheetWithType:(XQSheetType)type title:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle
@@ -47,10 +47,7 @@
 
 - (void)setup
 {
-    _maskView = [[UIView alloc] init];
-    _maskView.backgroundColor = [UIColor colorWithRed:46/255.0f green:49/255.0f blue:50/255.0f alpha:1];
-    _maskView.alpha = 0;
-    [self.view addSubview:_maskView];
+    self.view.backgroundColor = [UIColor clearColor];
     
     _containerView = [[UIView alloc] init];
     _containerView.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
@@ -67,7 +64,10 @@
     }
     
     if (_sheetTitle.length > 0 || _sheetSubtitle.length > 0) {
-        [_containerView addSubview:self.labelBtnSeparateLine];
+        UIView *separateLine = [[UIView alloc] init]; 
+        separateLine.backgroundColor = [UIColor colorWithRed:205 / 255.0 green:205 / 255.0 blue:205 / 255.0 alpha:1];
+        separateLine.tag = 555;
+        [_containerView addSubview:separateLine];
     }
     
     for (NSInteger i = 0; i < self.buttons.count; i++) {
@@ -181,14 +181,6 @@
         _sheetSubtitleLabel.backgroundColor = [UIColor whiteColor];
     }
     return _sheetSubtitleLabel;
-}
-
-- (UIView *)labelBtnSeparateLine {
-    if (_labelBtnSeparateLine == nil) {
-        _labelBtnSeparateLine = [[UIView alloc] init];
-        _labelBtnSeparateLine.backgroundColor = [UIColor colorWithRed:205 / 255.0 green:205 / 255.0 blue:205 / 255.0 alpha:1];
-    }
-    return _labelBtnSeparateLine;
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
