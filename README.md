@@ -7,7 +7,7 @@ A convenient sheet presented from bottom.
 
 #### 功能
 
-自定义"菜单"上的文字颜色,文字字体大小等更加方便.采用block回调的方式配置按钮及执行按钮事件,让代码更加紧凑.
+自定义"菜单"上的文字颜色,文字字体大小等更加方便.采用block回调的方式配置按钮及执行按钮事件,让代码更加紧凑.适配iPhoneX.
 
 #### 使用
 ```
@@ -15,7 +15,7 @@ A convenient sheet presented from bottom.
 XQSheet *sheet = [XQSheet sheetWithType:XQSheetTypeSelect title:nil subTitle:nil cancelButtonTitle:nil];
 sheet.selectedBtnMarkImage = [UIImage imageNamed:@"fb_btn_selected"];
 [sheet addBtnWithTitle:@"先不冲" configHandler:nil actionHandler:^(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex) {
-		UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
     [av show];
 }];
 [sheet addBtnWithTitle:@"冲满" configHandler:nil actionHandler:^(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex) {
