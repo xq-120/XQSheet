@@ -1,5 +1,5 @@
 //
-//  ZAEFadeInPresentAnimation.swift
+//  JKFadeInPresentAnimation.swift
 //  UIPresentationController_demo
 //
 //  Created by jekyttt on 2019/4/7.
@@ -14,7 +14,7 @@ class JKFadeInPresentAnimation: NSObject, UIViewControllerAnimatedTransitioning 
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        guard let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as? XQSelectSheet else {
+        guard let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else {
             return
         }
         let finalFrame = transitionContext.finalFrame(for: toVC)
