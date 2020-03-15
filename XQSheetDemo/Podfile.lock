@@ -4,7 +4,6 @@ PODS:
     - JKPresentationController (~> 1.0.0)
 
 DEPENDENCIES:
-  - JKPresentationController (~> 1.0.0)
   - XQSheet (~> 2.0.0)
 
 SPEC REPOS:
@@ -16,6 +15,6 @@ SPEC CHECKSUMS:
   JKPresentationController: f8886b6ce8a803d8a54711ffaddc94d10cd48fe2
   XQSheet: dfac222aa581cfb381d8484530344bb9dee1da62
 
-PODFILE CHECKSUM: d1f709f1c63ded06544448c06f0d13627bdbfdb1
+PODFILE CHECKSUM: 8d9eb3fe1bb80f863494ad24762599b1aeecba7c
 
 COCOAPODS: 1.9.1
