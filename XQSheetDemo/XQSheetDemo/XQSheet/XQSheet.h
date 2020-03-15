@@ -62,21 +62,21 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 /**
  弹出菜单
 
- note:在内部创建的window上弹出.
-
- @param completion 弹出完成回调block
-*/
-- (void)showSheetWithCompletion:(void(^)(void))completion;
-
-/**
- 弹出菜单
-
- note:基于传入的viewController弹出.
+ note:基于传入的viewController弹出.(recommend)
 
  @param viewController 基于viewController弹出.
  @param completion 弹出完成回调block
 */
 - (void)showSheetWithController:(UIViewController *)viewController completion:(void(^)(void))completion;
+
+/**
+ 弹出菜单
+
+ note:在内部创建的window上弹出.
+
+ @param completion 弹出完成回调block
+*/
+- (void)showSheetWithCompletion:(void(^)(void))completion;
 
 /**
  关闭菜单

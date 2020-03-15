@@ -207,10 +207,10 @@
 		8FA746D2241DDE9F005F1923 /* JKPresentationController */ = {
 			isa = PBXGroup;
 			children = (
+				8FA746D6241DDE9F005F1923 /* UIViewController+JKPresent.swift */,
+				8FA746D5241DDE9F005F1923 /* JKPresentationController.swift */,
 				8FA746D3241DDE9F005F1923 /* JKFadeOutDismissAnimation.swift */,
 				8FA746D4241DDE9F005F1923 /* JKFadeInPresentAnimation.swift */,
-				8FA746D5241DDE9F005F1923 /* JKPresentationController.swift */,
-				8FA746D6241DDE9F005F1923 /* UIViewController+JKPresent.swift */,
 			);
 			path = JKPresentationController;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				TargetAttributes = {
 					8F1636801E64759C001E5A63 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DBCEQJW744;
+						DevelopmentTeam = 5Y3FRB6V5L;
 						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
@@ -506,9 +506,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = DBCEQJW744;
+				DEVELOPMENT_TEAM = 5Y3FRB6V5L;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensefun.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,9 +523,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = DBCEQJW744;
+				DEVELOPMENT_TEAM = 5Y3FRB6V5L;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensefun.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
