@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JKPresentationController/JKBaseAlertViewController.h>
 
 typedef NS_ENUM(NSInteger, XQSheetType) {
     XQSheetTypeSelect = 0, //默认样式
     XQSheetTypeAction //仿系统样式
 };
 
-@interface XQSheet : UIViewController
+@interface XQSheet : JKBaseAlertViewController
 {
    @protected NSMutableArray *_buttons;
 }
@@ -26,16 +27,12 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 @property (nonatomic, copy) NSString *sheetSubtitle;
 @property (nonatomic, copy) NSString *cancelButtonTitle;
 
-@property (nonatomic, strong, readonly) UIView *containerView;
-
 // 选中时的指示图标.
 @property (nonatomic, strong) UIImage *selectedBtnMarkImage;
 
 // 选中的index.默认为NSNotFound
 @property (nonatomic, assign) NSInteger selectedIndex;
 
-// 默认YES
-@property (nonatomic, assign) BOOL shouldDismissOnTouchOutside;
 
 /**
  创建菜单实例

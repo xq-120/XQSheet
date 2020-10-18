@@ -8,8 +8,6 @@
 
 #import "XQSelectSheet.h"
 #import "XQSheetButton.h"
-#import "XQSheetPresentAnimation.h"
-#import "XQSheetDismissAnimation.h"
 #import <JKPresentationController/JKPresentationController-Swift.h>
 
 static const CGFloat sheetLabelH = 24;
@@ -22,13 +20,10 @@ static const CGFloat sheetBtnH = 48;
     self = [super init];
     if (self)
     {
-        self.jk_presentAnimation = XQSheetPresentAnimation.new;
-        self.jk_dismissAnimation = XQSheetDismissAnimation.new;
         self.sheetTitle = title;
         self.sheetSubtitle = subTitle;
         self.cancelButtonTitle = cancelButtonTitle;
         self.selectedIndex = NSNotFound;
-        self.shouldDismissOnTouchOutside = YES;
     }
     
     return self;
@@ -106,7 +101,7 @@ static const CGFloat sheetBtnH = 48;
     }
     
     CGRect sheetBgViewRect = CGRectMake(0, self.view.frame.size.height - y, self.view.frame.size.width, y);
-    self.containerView.frame = sheetBgViewRect;
+    self.contentView.frame = sheetBgViewRect;
 }
 
 - (void)viewSafeAreaInsetsDidChange {
@@ -114,10 +109,10 @@ static const CGFloat sheetBtnH = 48;
 
     CGFloat offset = self.view.safeAreaInsets.bottom;
 
-    CGRect sheetBgViewRect = self.containerView.frame;
+    CGRect sheetBgViewRect = self.contentView.frame;
     sheetBgViewRect.origin.y -= offset;
     sheetBgViewRect.size.height += offset;
-    self.containerView.frame = sheetBgViewRect;
+    self.contentView.frame = sheetBgViewRect;
 }
 
 @end

@@ -8,8 +8,6 @@
 
 #import "XQActionSheet.h"
 #import "XQSheetButton.h"
-#import "XQSheetPresentAnimation.h"
-#import "XQSheetDismissAnimation.h"
 #import "UIView+JKRoundingCorners.h"
 #import <JKPresentationController/JKPresentationController-Swift.h>
 
@@ -24,13 +22,10 @@ static const CGFloat kLeadingGap = 10;
     self = [super init];
     if (self)
     {
-        self.jk_presentAnimation = XQSheetPresentAnimation.new;
-        self.jk_dismissAnimation = XQSheetDismissAnimation.new;
         self.sheetTitle = title;
         self.sheetSubtitle = subTitle;
         self.cancelButtonTitle = cancelButtonTitle;
         self.selectedIndex = NSNotFound;
-        self.shouldDismissOnTouchOutside = YES;
     }
     
     return self;
@@ -39,7 +34,7 @@ static const CGFloat kLeadingGap = 10;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.containerView.backgroundColor = [UIColor clearColor];
+    self.contentView.backgroundColor = [UIColor clearColor];
     
     [self layoutControllerSubviews];
 }
@@ -129,7 +124,7 @@ static const CGFloat kLeadingGap = 10;
     y+=kLeadingGap;
     
     CGRect sheetBgViewRect = CGRectMake(0, self.view.frame.size.height - y, self.view.frame.size.width, y);
-    self.containerView.frame = sheetBgViewRect;
+    self.contentView.frame = sheetBgViewRect;
 }
 
 - (void)viewSafeAreaInsetsDidChange {
@@ -141,10 +136,10 @@ static const CGFloat kLeadingGap = 10;
         offset -= kLeadingGap;
     }
 
-    CGRect sheetBgViewRect = self.containerView.frame;
+    CGRect sheetBgViewRect = self.contentView.frame;
     sheetBgViewRect.origin.y -= offset;
     sheetBgViewRect.size.height += offset;
-    self.containerView.frame = sheetBgViewRect;
+    self.contentView.frame = sheetBgViewRect;
 }
 
 @end

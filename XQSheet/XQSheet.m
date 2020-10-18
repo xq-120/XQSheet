@@ -36,6 +36,7 @@
     } else if (type == XQSheetTypeAction) {
         sheet = [[XQActionSheet alloc] initWithTitle:title subTitle:subTitle cancelButtonTitle:cancelButtonTitle];
     }
+    sheet.shouldDismissOnTouchBackView = YES;
     return sheet;
 }
 
@@ -49,25 +50,23 @@
 {
     self.view.backgroundColor = [UIColor clearColor];
     
-    _containerView = [[UIView alloc] init];
-    _containerView.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
-    [self.view addSubview:_containerView];
+    self.contentView.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     
     if (_sheetTitle.length > 0) {
         self.sheetTitleLabel.text = _sheetTitle;
-        [_containerView addSubview:self.sheetTitleLabel];
+        [self.contentView addSubview:self.sheetTitleLabel];
     }
     
     if (_sheetSubtitle.length > 0) {
         self.sheetSubtitleLabel.text = _sheetSubtitle;
-        [_containerView addSubview:self.sheetSubtitleLabel];
+        [self.contentView addSubview:self.sheetSubtitleLabel];
     }
     
     if (_sheetTitle.length > 0 || _sheetSubtitle.length > 0) {
         UIView *separateLine = [[UIView alloc] init]; 
         separateLine.backgroundColor = [UIColor colorWithRed:205 / 255.0 green:205 / 255.0 blue:205 / 255.0 alpha:1];
         separateLine.tag = 555;
-        [_containerView addSubview:separateLine];
+        [self.contentView addSubview:separateLine];
     }
     
     for (NSInteger i = 0; i < self.buttons.count; i++) {
@@ -76,17 +75,17 @@
         if (i == self.selectedIndex) {
             sheetBtn.selected = YES;
         }
-        [_containerView addSubview:sheetBtn];
+        [self.contentView addSubview:sheetBtn];
 
         UIView *separateLine = [[UIView alloc] init]; //保证按钮和分割线数量一致
         separateLine.backgroundColor = [UIColor colorWithRed:205 / 255.0 green:205 / 255.0 blue:205 / 255.0 alpha:1];
         separateLine.tag = 1000 + i;
-        [_containerView addSubview:separateLine];
+        [self.contentView addSubview:separateLine];
     }
     
     if (_cancelButtonTitle.length > 0) {
         [self.cancelButton setTitle:_cancelButtonTitle forState:UIControlStateNormal];
-        [_containerView addSubview:self.cancelButton];
+        [self.contentView addSubview:self.cancelButton];
     }
 }
 
@@ -181,15 +180,6 @@
         _sheetSubtitleLabel.backgroundColor = [UIColor whiteColor];
     }
     return _sheetSubtitleLabel;
-}
-
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [super touchesEnded:touches withEvent:event];
-    
-    if (self.shouldDismissOnTouchOutside) {
-        [self dismissSheetWithCompletion:nil];
-    }
 }
 
 @end
