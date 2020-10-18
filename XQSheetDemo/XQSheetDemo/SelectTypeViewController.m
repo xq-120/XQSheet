@@ -24,6 +24,9 @@
 {
     if (indexPath.row == 0) {
         XQSheet *sheet = [XQSheet sheetWithType:XQSheetTypeSelect title:@"温馨提示" subTitle:@"您的余额已不足,请及时充值!" cancelButtonTitle:@"取消"];
+        sheet.dismissOnTouchBackViewBlk = ^{
+            NSLog(@"点击背景消失");
+        };
         [sheet addBtnWithTitle:@"先不冲" configHandler:nil actionHandler:^(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex) {
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
