@@ -43,7 +43,6 @@
     sheet.sheetSubtitle = subTitle;
     sheet.cancelButtonTitle = cancelButtonTitle;
     sheet.selectedIndex = NSNotFound;
-    [sheet setup];
     return sheet;
 }
 
