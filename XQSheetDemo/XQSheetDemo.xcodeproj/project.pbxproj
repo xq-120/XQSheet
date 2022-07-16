@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11ABAA0F0CB33B170162C14D /* Pods_XQSheetDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36EC0BDF91FD55DBE012820 /* Pods_XQSheetDemo.framework */; };
 		8F1636861E64759C001E5A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636851E64759C001E5A63 /* main.m */; };
 		8F1636911E64759C001E5A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1636901E64759C001E5A63 /* Assets.xcassets */; };
 		8F1636941E64759C001E5A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1636921E64759C001E5A63 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		8F1636C41E6475B3001E5A63 /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636BC1E6475B3001E5A63 /* SelectTypeViewController.m */; };
 		8F1636C51E6475B3001E5A63 /* ActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1636BE1E6475B3001E5A63 /* ActionTableViewController.m */; };
 		8F1636C71E6475B3001E5A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1636C11E6475B3001E5A63 /* Main.storyboard */; };
+		AB13F3422229D0788F52F55F /* Pods_XQSheetDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92902AFB35D7915E53C5164 /* Pods_XQSheetDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		8F1636BE1E6475B3001E5A63 /* ActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTableViewController.m; sourceTree = "<group>"; };
 		8F1636C11E6475B3001E5A63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8FA746B9241D0273005F1923 /* XQSheetDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XQSheetDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		A36EC0BDF91FD55DBE012820 /* Pods_XQSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XQSheetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92902AFB35D7915E53C5164 /* Pods_XQSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XQSheetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11ABAA0F0CB33B170162C14D /* Pods_XQSheetDemo.framework in Frameworks */,
+				AB13F3422229D0788F52F55F /* Pods_XQSheetDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +171,7 @@
 		E84BA0F14AC713A80B8CC53E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A36EC0BDF91FD55DBE012820 /* Pods_XQSheetDemo.framework */,
+				F92902AFB35D7915E53C5164 /* Pods_XQSheetDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 				8F16367D1E64759C001E5A63 /* Sources */,
 				8F16367E1E64759C001E5A63 /* Frameworks */,
 				8F16367F1E64759C001E5A63 /* Resources */,
-				1E45105CD65AA0FFD4C3312D /* [CP] Embed Pods Frameworks */,
+				0841414BACDB77733D96DB96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,19 +310,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E45105CD65AA0FFD4C3312D /* [CP] Embed Pods Frameworks */ = {
+		0841414BACDB77733D96DB96 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JKPresentationController/JKPresentationController.framework",
+				"${BUILT_PRODUCTS_DIR}/XQGrandPopupView/XQGrandPopupView.framework",
 				"${BUILT_PRODUCTS_DIR}/XQSheet/XQSheet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKPresentationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XQGrandPopupView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XQSheet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

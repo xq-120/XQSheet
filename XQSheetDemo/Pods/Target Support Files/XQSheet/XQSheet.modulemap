@@ -1,0 +1,6 @@
+framework module XQSheet {
+  umbrella header "XQSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}

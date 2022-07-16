@@ -8,41 +8,30 @@
 
 #import "XQSelectSheet.h"
 #import "XQSheetButton.h"
-#import <JKPresentationController/JKPresentationController-Swift.h>
+#import "UIView+JKRoundingCorners.h"
 
 static const CGFloat sheetLabelH = 24;
 static const CGFloat sheetBtnH = 48;
 
 @implementation XQSelectSheet
 
-- (instancetype)initWithTitle:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle
-{
-    self = [super init];
-    if (self)
-    {
-        self.sheetTitle = title;
-        self.sheetSubtitle = subTitle;
-        self.cancelButtonTitle = cancelButtonTitle;
-        self.selectedIndex = NSNotFound;
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.contentView.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     }
-    
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)layoutSubviews {
+    [super layoutSubviews];
     
     [self layoutControllerSubviews];
 }
 
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    
-}
-
 - (void)layoutControllerSubviews {
     CGFloat y = 0;
-    CGFloat w = self.view.frame.size.width;
+    CGFloat w = self.frame.size.width;
     if (self.sheetTitle.length > 0)
     {
         CGFloat lableH = sheetLabelH;
@@ -71,7 +60,7 @@ static const CGFloat sheetBtnH = 48;
         CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
         if (y > 0) //绘制label和button之间的分割线
         {
-            UIView *separateLine = [self.view viewWithTag:555];
+            UIView *separateLine = [self viewWithTag:555];
             separateLine.frame = CGRectMake(0, y, w, separateLineH);
             y+=separateLineH;
         }
@@ -83,7 +72,7 @@ static const CGFloat sheetBtnH = 48;
             if (i < _buttons.count - 1)
             {
                 y+=sheetBtnH;
-                UIView *separateLine = [self.view viewWithTag:1000+i];
+                UIView *separateLine = [self viewWithTag:1000+i];
                 separateLine.frame = CGRectMake(0, y, w, separateLineH);
                 y+=separateLineH;
             }
@@ -100,18 +89,11 @@ static const CGFloat sheetBtnH = 48;
         y+=sheetBtnH;
     }
     
-    CGRect sheetBgViewRect = CGRectMake(0, self.view.frame.size.height - y, self.view.frame.size.width, y);
-    self.contentView.frame = sheetBgViewRect;
-}
-
-- (void)viewSafeAreaInsetsDidChange {
-    [super viewSafeAreaInsetsDidChange];
-
-    CGFloat offset = self.view.safeAreaInsets.bottom;
-
-    CGRect sheetBgViewRect = self.contentView.frame;
-    sheetBgViewRect.origin.y -= offset;
-    sheetBgViewRect.size.height += offset;
+    if ([UIDevice isIPhoneX]) {
+        y += 34;
+    }
+    
+    CGRect sheetBgViewRect = CGRectMake(0, self.frame.size.height - y, self.frame.size.width, y);
     self.contentView.frame = sheetBgViewRect;
 }
 

@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <JKPresentationController/JKBaseAlertViewController.h>
+#import <XQGrandPopupView/XQGrandPopupView.h>
 
 typedef NS_ENUM(NSInteger, XQSheetType) {
     XQSheetTypeSelect = 0, //默认样式
     XQSheetTypeAction //仿系统样式
 };
 
-@interface XQSheet : JKBaseAlertViewController
+@interface XQSheet : XQGrandPopupView
 {
    @protected NSMutableArray *_buttons;
 }
@@ -38,12 +38,22 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
  创建菜单实例
 
  @param type 弹出样式
- 
  @param title 主标题.nil则不创建主标题Label
  @param subTitle 副标题.nil则不创建副标题Label
  @param cancelButtonTitle 取消按钮标题.nil则不创建取消按钮.
 */
 + (instancetype)sheetWithType:(XQSheetType)type title:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle;
+
+/**
+ 创建菜单实例
+
+ @param frame 弹窗大小
+ @param type 弹出样式
+ @param title 主标题.nil则不创建主标题Label
+ @param subTitle 副标题.nil则不创建副标题Label
+ @param cancelButtonTitle 取消按钮标题.nil则不创建取消按钮.
+*/
++ (instancetype)sheetWithFrame:(CGRect)frame type:(XQSheetType)type title:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle;
 
 /**
  添加按钮
@@ -53,31 +63,5 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
  @param handler 按钮事件回调block
 */
 - (void)addBtnWithTitle:(NSString *)title configHandler:(void (^)(UIButton *button))configHandler actionHandler:(void (^)(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex))handler;
-
-/**
- 弹出菜单
-
- note:基于传入的viewController弹出.(recommend)
-
- @param viewController 基于viewController弹出.
- @param completion 弹出完成回调block
-*/
-- (void)showSheetWithController:(UIViewController *)viewController completion:(void(^)(void))completion;
-
-/**
- 弹出菜单
-
- note:在内部创建的window上弹出.
-
- @param completion 弹出完成回调block
-*/
-- (void)showSheetWithCompletion:(void(^)(void))completion;
-
-/**
- 关闭菜单
-
- @param completion 关闭完成回调block
-*/
-- (void)dismissSheetWithCompletion:(void(^)(void))completion;
 
 @end

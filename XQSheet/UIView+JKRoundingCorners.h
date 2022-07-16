@@ -30,3 +30,9 @@
 - (void)jk_addRoundingCorners:(UIRectCorner)rectCorner cornerRadii:(CGSize)cornerRadii borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth;
 
 @end
+
+@interface UIDevice (FullScreen)
+
++ (BOOL)isIPhoneX;
+
+@end

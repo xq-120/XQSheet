@@ -10,7 +10,6 @@
 #import "XQSelectSheet.h"
 #import "XQActionSheet.h"
 #import "XQSheetButton.h"
-#import <JKPresentationController/JKPresentationController-Swift.h>
 
 @interface XQSheet ()
 
@@ -20,6 +19,8 @@
 
 @property (nonatomic, strong, readwrite) NSMutableArray *buttons;
 
+@property (nonatomic, assign) XQSheetType type;
+
 @end
 
 @implementation XQSheet
@@ -28,30 +29,36 @@
     
 }
 
-+ (instancetype)sheetWithType:(XQSheetType)type title:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle
-{
++ (instancetype)sheetWithFrame:(CGRect)frame type:(XQSheetType)type title:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle {
     XQSheet *sheet = nil;
     if (type == XQSheetTypeSelect) {
-        sheet = [[XQSelectSheet alloc] initWithTitle:title subTitle:subTitle cancelButtonTitle:cancelButtonTitle];
+        sheet = [[XQSelectSheet alloc] initWithFrame:frame];
     } else if (type == XQSheetTypeAction) {
-        sheet = [[XQActionSheet alloc] initWithTitle:title subTitle:subTitle cancelButtonTitle:cancelButtonTitle];
+        sheet = [[XQActionSheet alloc] initWithFrame:frame];
     }
+    sheet.type = type;
     sheet.shouldDismissOnTouchBackView = YES;
+    sheet.animationType = XQGrandPopupViewAnimationTypePresent;
+    sheet.sheetTitle = title;
+    sheet.sheetSubtitle = subTitle;
+    sheet.cancelButtonTitle = cancelButtonTitle;
+    sheet.selectedIndex = NSNotFound;
+    [sheet setup];
     return sheet;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
++ (instancetype)sheetWithType:(XQSheetType)type title:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle
+{
+    return [self sheetWithFrame:CGRectZero type:type title:title subTitle:subTitle cancelButtonTitle:cancelButtonTitle];
+}
+
+- (void)showIn:(UIView *)view completion:(void (^)(void))completion {
     [self setup];
+    [super showIn:view completion:completion];
 }
 
 - (void)setup
 {
-    self.view.backgroundColor = [UIColor clearColor];
-    
-    self.contentView.backgroundColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
-    
     if (_sheetTitle.length > 0) {
         self.sheetTitleLabel.text = _sheetTitle;
         [self.contentView addSubview:self.sheetTitleLabel];
@@ -113,7 +120,7 @@
         weakSelf.selectedIndex = index;
         
         NSString *title = [button titleForState:UIControlStateNormal];
-        [weakSelf dismissSheetWithCompletion:^{
+        [weakSelf dismissWithCompletion:^{
             !handler ?: handler(button, title, index);
         }];
     };
@@ -124,21 +131,7 @@
 
 - (void)cancelButtonTapped:(UIButton *)sender
 {
-    [self dismissSheetWithCompletion:nil];
-}
-
-- (void)showSheetWithCompletion:(void (^)(void))completion
-{
-    [self jk_showWithAnimated:YES completion:completion];
-}
-
-- (void)showSheetWithController:(UIViewController *)viewController completion:(void (^)(void))completion {
-    [self jk_showWithViewController:viewController animated:YES completion:completion];
-}
-
-- (void)dismissSheetWithCompletion:(void (^)(void))completion
-{
-    [self jk_hideWithAnimated:YES completion:completion];
+    [self dismissWithCompletion:nil];
 }
 
 - (NSMutableArray<XQSheetButton *> *)buttons {

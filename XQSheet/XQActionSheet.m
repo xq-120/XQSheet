@@ -9,7 +9,6 @@
 #import "XQActionSheet.h"
 #import "XQSheetButton.h"
 #import "UIView+JKRoundingCorners.h"
-#import <JKPresentationController/JKPresentationController-Swift.h>
 
 static const CGFloat sheetLabelH = 24;
 static const CGFloat sheetBtnH = 48;
@@ -17,38 +16,23 @@ static const CGFloat kLeadingGap = 10;
 
 @implementation XQActionSheet
 
-- (instancetype)initWithTitle:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle
-{
-    self = [super init];
-    if (self)
-    {
-        self.sheetTitle = title;
-        self.sheetSubtitle = subTitle;
-        self.cancelButtonTitle = cancelButtonTitle;
-        self.selectedIndex = NSNotFound;
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.contentView.backgroundColor = [UIColor clearColor];
     }
-    
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.contentView.backgroundColor = [UIColor clearColor];
+- (void)layoutSubviews {
+    [super layoutSubviews];
     
     [self layoutControllerSubviews];
 }
 
-- (void)viewWillLayoutSubviews
-{
-    [super viewWillLayoutSubviews];
-    
-    
-}
-
 - (void)layoutControllerSubviews {
     CGFloat y = 0;
-    CGFloat w = self.view.frame.size.width - 2 * kLeadingGap;
+    CGFloat w = self.frame.size.width - 2 * kLeadingGap;
     if (self.sheetTitle.length > 0)
     {
         CGFloat lableH = sheetLabelH;
@@ -84,7 +68,7 @@ static const CGFloat kLeadingGap = 10;
         CGFloat separateLineH = 1/[UIScreen mainScreen].scale;
         if (y > 0) //绘制label和button之间的分割线
         {
-            UIView *separateLine = [self.view viewWithTag:555];
+            UIView *separateLine = [self viewWithTag:555];
             separateLine.frame = CGRectMake(kLeadingGap, y, w, separateLineH);
             y+=separateLineH;
         }
@@ -100,7 +84,7 @@ static const CGFloat kLeadingGap = 10;
                 }
                 
                 y+=sheetBtnH;
-                UIView *separateLine = [self.view viewWithTag:1000+i];
+                UIView *separateLine = [self viewWithTag:1000+i];
                 separateLine.frame = CGRectMake(kLeadingGap, y, w, separateLineH);
                 y+=separateLineH;
             }
@@ -123,22 +107,11 @@ static const CGFloat kLeadingGap = 10;
     
     y+=kLeadingGap;
     
-    CGRect sheetBgViewRect = CGRectMake(0, self.view.frame.size.height - y, self.view.frame.size.width, y);
-    self.contentView.frame = sheetBgViewRect;
-}
-
-- (void)viewSafeAreaInsetsDidChange {
-    [super viewSafeAreaInsetsDidChange];
-
-    CGFloat safeBottom = self.view.safeAreaInsets.bottom;
-    CGFloat offset = safeBottom;
-    if (safeBottom > 0) {
-        offset -= kLeadingGap;
+    if ([UIDevice isIPhoneX]) {
+        y += 34;
     }
-
-    CGRect sheetBgViewRect = self.contentView.frame;
-    sheetBgViewRect.origin.y -= offset;
-    sheetBgViewRect.size.height += offset;
+    
+    CGRect sheetBgViewRect = CGRectMake(0, self.frame.size.height - y, self.frame.size.width, y);
     self.contentView.frame = sheetBgViewRect;
 }
 

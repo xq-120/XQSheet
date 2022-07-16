@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'XQSheetDemo' do
 
-pod 'XQSheet', '~> 2.1.0'
-#pod 'XQSheet', :path => '../'
+#pod 'XQSheet', '~> 2.1.0'
+pod 'XQSheet', :path => '../'
+
 end

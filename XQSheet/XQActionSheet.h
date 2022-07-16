@@ -10,6 +10,5 @@
 
 @interface XQActionSheet : XQSheet
 
-- (instancetype)initWithTitle:(NSString *)title subTitle:(NSString *)subTitle cancelButtonTitle:(NSString *)cancelButtonTitle;
 
 @end

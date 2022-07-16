@@ -24,7 +24,7 @@
 {
     if (indexPath.row == 0) {
         XQSheet *sheet = [XQSheet sheetWithType:XQSheetTypeSelect title:@"温馨提示" subTitle:@"您的余额已不足,请及时充值!" cancelButtonTitle:@"取消"];
-        sheet.dismissOnTouchBackViewBlk = ^{
+        sheet.onTouchBackViewActionBlk = ^{
             NSLog(@"点击背景消失");
         };
         [sheet addBtnWithTitle:@"先不冲" configHandler:nil actionHandler:^(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex) {
@@ -39,7 +39,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheetWithCompletion:nil];
+        [sheet showWithCompletion:nil];
     }
     
     if (indexPath.row == 1) {
@@ -65,7 +65,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheetWithCompletion:nil];
+        [sheet showWithCompletion:nil];
     }
     
     if (indexPath.row == 2) {
@@ -82,7 +82,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheetWithCompletion:nil];
+        [sheet showWithCompletion:nil];
     }
     
     if (indexPath.row == 3) {
@@ -99,7 +99,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheetWithCompletion:nil];
+        [sheet showWithCompletion:nil];
     }
     
     if (indexPath.row == 4) {
@@ -118,11 +118,11 @@
             [av show];
         }];
         sheet.selectedIndex = 1;
-        [sheet showSheetWithCompletion:nil];
+        [sheet showWithCompletion:nil];
     }
     
     if (indexPath.row == 5) {
-        XQSheet *sheet = [XQSheet sheetWithType:XQSheetTypeSelect title:nil subTitle:nil cancelButtonTitle:nil];
+        XQSheet *sheet = [XQSheet sheetWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64) type:XQSheetTypeSelect title:nil subTitle:nil cancelButtonTitle:nil];
         [sheet addBtnWithTitle:@"先不冲" configHandler:nil actionHandler:^(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex) {
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
@@ -135,7 +135,7 @@
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
         }];
-        [sheet showSheetWithController:self completion:nil];
+        [sheet showIn:self.view completion:nil];
     }
 }
 

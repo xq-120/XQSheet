@@ -42,3 +42,16 @@
 }
 
 @end
+
+@implementation UIDevice (FullScreen)
+
++ (BOOL)isIPhoneX {
+    if (@available(iOS 11.0, *)) {
+        if (UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom > 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
+@end
