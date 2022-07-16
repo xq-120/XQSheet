@@ -13,8 +13,6 @@ A convenient sheet presented from bottom.
 
 `pod 'XQSheet'`
 
-注意：Podfile文件需要添加 `use_frameworks!` 。因为底层基于了一个Swift库。
-
 #### 使用
 ```
 //通过工厂方法实例化对象, XQSheetTypeSelect/XQSheetTypeAction两种
