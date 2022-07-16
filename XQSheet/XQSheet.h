@@ -33,6 +33,9 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 // 选中的index.默认为NSNotFound
 @property (nonatomic, assign) NSInteger selectedIndex;
 
+/// 点击cancel按钮时的回调
+@property (nonatomic, copy) void(^cancelActionBlock)(void);
+
 
 /**
  创建菜单实例

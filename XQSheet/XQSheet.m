@@ -131,7 +131,7 @@
 
 - (void)cancelButtonTapped:(UIButton *)sender
 {
-    [self dismissWithCompletion:nil];
+    [self dismissWithCompletion:self.cancelActionBlock];
 }
 
 - (NSMutableArray<XQSheetButton *> *)buttons {

@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "XQSheet"
   s.author       = { "xq-120" => "1204556447@qq.com" }
-  s.version      = "2.1.1"
+  s.version      = "2.1.2"
   s.summary      = "A convenient sheet presented from bottom."
   s.description  = <<-DESC
                    A convenient sheet presented from bottom, which implement by Objective-C.

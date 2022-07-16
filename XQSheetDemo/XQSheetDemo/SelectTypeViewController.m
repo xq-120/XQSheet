@@ -87,6 +87,9 @@
     
     if (indexPath.row == 3) {
         XQSheet *sheet = [XQSheet sheetWithType:XQSheetTypeSelect title:nil subTitle:nil cancelButtonTitle:@"取消"];
+        sheet.cancelActionBlock = ^{
+            NSLog(@"点击cancel");
+        };
         [sheet addBtnWithTitle:@"先不冲" configHandler:nil actionHandler:^(UIButton *button, NSString *buttonTitle, NSInteger buttonIndex) {
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"你选择了:%@", buttonTitle] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [av show];
