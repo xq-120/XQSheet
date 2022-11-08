@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "XQSheet"
   s.author       = { "xq-120" => "1204556447@qq.com" }
-  s.version      = "2.1.2"
+  s.version      = "2.1.3"
   s.summary      = "A convenient sheet presented from bottom."
   s.description  = <<-DESC
                    A convenient sheet presented from bottom, which implement by Objective-C.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   
   s.license      = "MIT"
   
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "10.0"
 
   s.source       = { :git => "https://github.com/xq-120/XQSheet.git", :tag => s.version.to_s }
   s.source_files  = "XQSheet/*"
@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   s.swift_versions = "5.0"
-  s.dependency "XQGrandPopupView", "~> 1.0.1"
+  s.dependency "JHGrandPopupView", "~> 1.0.0"
 
 end

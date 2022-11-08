@@ -317,12 +317,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XQGrandPopupView/XQGrandPopupView.framework",
+				"${BUILT_PRODUCTS_DIR}/JHGrandPopupView/JHGrandPopupView.framework",
 				"${BUILT_PRODUCTS_DIR}/XQSheet/XQSheet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XQGrandPopupView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JHGrandPopupView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XQSheet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +506,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5Y3FRB6V5L;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xq.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,7 +524,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5Y3FRB6V5L;
 				INFOPLIST_FILE = XQSheetDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xq.XQSheetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

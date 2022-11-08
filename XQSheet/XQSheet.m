@@ -38,7 +38,7 @@
     }
     sheet.type = type;
     sheet.shouldDismissOnTouchBackView = YES;
-    sheet.animationType = XQGrandPopupViewAnimationTypePresent;
+    sheet.animationType = JHGrandPopupViewAnimationTypePresent;
     sheet.sheetTitle = title;
     sheet.sheetSubtitle = subTitle;
     sheet.cancelButtonTitle = cancelButtonTitle;

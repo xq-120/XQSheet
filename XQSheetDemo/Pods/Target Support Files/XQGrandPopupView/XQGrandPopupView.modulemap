@@ -1,6 +1,0 @@
-framework module XQGrandPopupView {
-  umbrella header "XQGrandPopupView-umbrella.h"
-
-  export *
-  module * { export * }
-}

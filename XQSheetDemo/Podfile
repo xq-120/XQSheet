@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 use_frameworks!
 
 target 'XQSheetDemo' do
 
-#pod 'XQSheet', '~> 2.1.0'
+#pod 'XQSheet', '~> 2.1.3'
 pod 'XQSheet', :path => '../'
 
 end

@@ -1,23 +1,23 @@
 PODS:
-  - XQGrandPopupView (1.0.1)
-  - XQSheet (2.1.0):
-    - XQGrandPopupView (~> 1.0.1)
+  - JHGrandPopupView (1.0.0)
+  - XQSheet (2.1.3):
+    - JHGrandPopupView (~> 1.0.0)
 
 DEPENDENCIES:
   - XQSheet (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - XQGrandPopupView
+    - JHGrandPopupView
 
 EXTERNAL SOURCES:
   XQSheet:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XQGrandPopupView: 6fd8854dc5ab54f5527108cc414326c33fbe5282
-  XQSheet: 12fde42b4385f6bc7e30edcaeb6c1bff00281902
+  JHGrandPopupView: 9968e67f30724454d4f4d36e57ce58b71014b3eb
+  XQSheet: b12f6893b83e33cdc76d3a15fcd514fb7a5a8c8d
 
-PODFILE CHECKSUM: 8dd22419ad2773aad7f1ccf9bc2028216b56fa0a
+PODFILE CHECKSUM: 95ca964687e6ab2c5d82915bc6c5aab4d237ffdd
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

@@ -1,9 +1,9 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/XQGrandPopupView" "${PODS_CONFIGURATION_BUILD_DIR}/XQSheet"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JHGrandPopupView" "${PODS_CONFIGURATION_BUILD_DIR}/XQSheet"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/XQGrandPopupView/XQGrandPopupView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/XQSheet/XQSheet.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JHGrandPopupView/JHGrandPopupView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/XQSheet/XQSheet.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "UIKit" -framework "XQGrandPopupView" -framework "XQSheet"
+OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "JHGrandPopupView" -framework "UIKit" -framework "XQSheet"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

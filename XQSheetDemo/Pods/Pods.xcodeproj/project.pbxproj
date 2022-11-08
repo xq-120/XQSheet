@@ -7,134 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BC4D1C7C6085F25715A185FC5B28E1E /* XQActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BF80326F158B9BDE0DCE398B8D709 /* XQActionSheet.m */; };
-		15E755BC8DC385901FE4E757421C5906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		19D5EC450CE8BB0CA257750B84BFD25C /* XQGrandPopupFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AABE4EBE06CFA29044A55C39AE2DA2 /* XQGrandPopupFadeAnimation.m */; };
-		1CABB88AE50B85BD61B7F59FDB8F7289 /* UIView+JKRoundingCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D11946521AD4B08DDAB7AC70D31CA85 /* UIView+JKRoundingCorners.m */; };
-		3149989A516E179FF45EF2F0F46A35F5 /* XQGrandPopupPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 820AC2BD7BFC13DD646AB1946CDDE736 /* XQGrandPopupPresentAnimation.m */; };
-		464B93D9557B4265D6D08F53730FE9C2 /* XQGrandPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B49214022EFBF5FC1B7B9A2B6CA8BB /* XQGrandPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5827EA8618A8A9A29835A37C8733254C /* XQSheetButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A13EF68836DAD4F53008A95DED4C244 /* XQSheetButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		599F47CFD83D8239FBF4C62C2629DB8D /* Pods-XQSheetDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3D90B43F9F922399B3317ABB2B4781 /* Pods-XQSheetDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5AFCA1C4DF6920171B8F0419697A84B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		5DDDC2618AB7C0E245351CB637193E5F /* XQSheetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AA793DEF60CE0265BDC1FD53281D7 /* XQSheetButton.m */; };
-		5E5841FED3D257D1A18CCB3CBBC1DCA5 /* XQGrandPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B17840CD783060F4176F25F838BD93 /* XQGrandPopupView-dummy.m */; };
-		70C285E6DA162122F883FDBCB3F4872E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		73651E9E9A75747501699EC60C50745D /* XQSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60110FD2D1D48FFF656AE71BCF7704E7 /* XQSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		805957B55D3AE37369655566F5E876D2 /* XQGrandPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A8ECB360DE3997AAF6D7673D5106DF /* XQGrandPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89D661F1B30AFB06D287A89ECC4CF296 /* Pods-XQSheetDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE208961543F5F6498B0789108DD343 /* Pods-XQSheetDemo-dummy.m */; };
-		AA0867EEC15BFA69F0080F9C206650EA /* XQSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7602219015B14AAE02A696678858927F /* XQSheet-dummy.m */; };
-		B895B2ED2B5E893415B12261B62E7F56 /* XQGrandPopupPresentAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DB36A800BD2C6F8610C80D6545DD5B7B /* XQGrandPopupPresentAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA2E975F01D488149AC1F8A9A9B65804 /* XQSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F42B7B2EF19D6E48E02981E5C5C546 /* XQSelectSheet.m */; };
-		BE399011B955ED8977406554C5708EE5 /* XQGrandPopupFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C69EF4A646C9A71A43AD18422CBD7928 /* XQGrandPopupFadeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2FB7C521A7C724DA70C0CADE504ABC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		C65CA363AF64004999A924F8E7E21DD3 /* XQActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D07F7D574E5370AD4BBE5BBDE8611A1 /* XQActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8501E48CB45DAF5CF1A4A3FEDA6958F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		CA65F257EC68D021AF9D5F335D566C41 /* UIView+JKRoundingCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 969AEAFEEE29E1F765F4E852529598A5 /* UIView+JKRoundingCorners.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E81F472D28CEA7EF09BE329D6F2AF426 /* XQSelectSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = D628CF2322243C92BBCB77944F85B7AF /* XQSelectSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA7B120003B358F11CD271A33137000D /* XQSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 766C7092A113A221584B3435427063A2 /* XQSheet.m */; };
-		F0F8EA49653B23AD98B2EEB74FADC81B /* XQSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = FB81DC68A72551043363DA26C263953E /* XQSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2F2A5AB2E9621709A6DA042A67B22E0 /* XQGrandPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63C99B102F44F6822BC402E5D5D1 /* XQGrandPopupView.m */; };
+		0CA751544D545970C95024B265E276C3 /* XQSheetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AA793DEF60CE0265BDC1FD53281D7 /* XQSheetButton.m */; };
+		1A98932DB2C6FD195E8BB286FF31B7B1 /* XQSheet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7602219015B14AAE02A696678858927F /* XQSheet-dummy.m */; };
+		21E11C02CAC96680A64DAC5931FFE3BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		2425B4070C192A1C862D8A8F7BE6E8E9 /* JHGrandPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA00A638F6AD182524F9430FBD2681 /* JHGrandPopupView.m */; };
+		4165D9C3CA1AA6441CC6136E3E1B470F /* UIView+JKRoundingCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 969AEAFEEE29E1F765F4E852529598A5 /* UIView+JKRoundingCorners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E62CF0EDE5D5CBDCA655843BBCE00B0 /* XQActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D07F7D574E5370AD4BBE5BBDE8611A1 /* XQActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68B30C2107960848C0522275E5392429 /* XQSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = FB81DC68A72551043363DA26C263953E /* XQSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C173D10CC1FD34998277968247E9C65 /* JHGrandPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC94B4C92A3235E33309CFA24C8FC /* JHGrandPopupView-dummy.m */; };
+		74E079110C65F3DC40F22691B58C8F83 /* JHGrandPopupFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF60B19D69C6073FB44EA56BEA1E690 /* JHGrandPopupFadeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A06EC815849068F39577B270A29CAF2 /* XQSelectSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = D628CF2322243C92BBCB77944F85B7AF /* XQSelectSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E2DF832DDECCE4F539D41E65912FA00 /* XQSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 766C7092A113A221584B3435427063A2 /* XQSheet.m */; };
+		8100622562AEB2E94E64AE7C87FA6AFC /* Pods-XQSheetDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3D90B43F9F922399B3317ABB2B4781 /* Pods-XQSheetDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		865E72B8C8FC4B60CC1AC4B4C2F51ACB /* XQSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F42B7B2EF19D6E48E02981E5C5C546 /* XQSelectSheet.m */; };
+		8BF70D529BC2769A0E478CE43E155B0F /* XQSheetButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A13EF68836DAD4F53008A95DED4C244 /* XQSheetButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C91AA49989BC6E90759D84E9EA12B9C /* JHGrandPopupPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C6246FDF7DD5B4F8112A6E469282BA /* JHGrandPopupPresentAnimation.m */; };
+		91EA92FE9E2595693C5565E520C11D68 /* JHGrandPopupFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCC88F8A63A22C685AA8C1988D29D9E /* JHGrandPopupFadeAnimation.m */; };
+		A187E6898525026709F23440E0F8893A /* XQActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D71BF80326F158B9BDE0DCE398B8D709 /* XQActionSheet.m */; };
+		A77C9668F83871E05347753461968D5A /* Pods-XQSheetDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE208961543F5F6498B0789108DD343 /* Pods-XQSheetDemo-dummy.m */; };
+		B34279E780B67A18C200700E15205BEE /* JHGrandPopupPresentAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 72562C7AA895F631B2698A176B361A2E /* JHGrandPopupPresentAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D17EE0951FCE8049D9C29E90871166BD /* UIView+JKRoundingCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D11946521AD4B08DDAB7AC70D31CA85 /* UIView+JKRoundingCorners.m */; };
+		DC32AAFCFDEE2BDDB341C4783B207B28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		DCF3BD28B36D5FCD19660F2F689EAA3C /* JHGrandPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE35A9C5E8B941D864D141F516EBA116 /* JHGrandPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDAC6BDEA2EC3B0D660D1FC513B998C9 /* JHGrandPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E7065281A2DBA0524EF8D70BB47029 /* JHGrandPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE15A2B06D16A2FBFD2E9F94C2562142 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F060958C9DEACF409AA72052A4AFC6AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F179EEA362FB281616577F3BB23C8B1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		F1F5E6F365BACDCFFD063288E01831DC /* XQSheet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60110FD2D1D48FFF656AE71BCF7704E7 /* XQSheet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AF8550FC802DB189E1E075E07FAF5CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FD3454DA66E7FFE9B322B15E236C4A36;
-			remoteInfo = XQGrandPopupView;
-		};
-		8A41C3F6C4146AA50389AB3899DC03CF /* PBXContainerItemProxy */ = {
+		1787CBCB0C496B0FDDF6E7FDAC83F85E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8FFA3FBD2ABA046F87EAA1F6562946CA;
 			remoteInfo = XQSheet;
 		};
-		9B0264216D2A6FDE7B089E870385A83D /* PBXContainerItemProxy */ = {
+		73B04D371F2CF25745343FE4AE716E86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FD3454DA66E7FFE9B322B15E236C4A36;
-			remoteInfo = XQGrandPopupView;
+			remoteGlobalIDString = 7761D6457FC86795C59BCFDF08A7CA36;
+			remoteInfo = JHGrandPopupView;
+		};
+		D5A525D90FEBB34022C11D0965726540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7761D6457FC86795C59BCFDF08A7CA36;
+			remoteInfo = JHGrandPopupView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016DDB8E5409B3D5B607B6938FCCDA1E /* JHGrandPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JHGrandPopupView-Info.plist"; sourceTree = "<group>"; };
 		0C42E8377F0C6A13B71195174DE5B3D5 /* XQSheet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQSheet-prefix.pch"; sourceTree = "<group>"; };
 		123D1AED27C72D54B164AFD109E8EA3B /* Pods-XQSheetDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XQSheetDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1FF3C47CECFE001FFC7172ABAB7D6339 /* Pods-XQSheetDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XQSheetDemo"; path = Pods_XQSheetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B17840CD783060F4176F25F838BD93 /* XQGrandPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XQGrandPopupView-dummy.m"; sourceTree = "<group>"; };
 		2BE208961543F5F6498B0789108DD343 /* Pods-XQSheetDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XQSheetDemo-dummy.m"; sourceTree = "<group>"; };
 		30864D6038D813F7813DF37A6B39FB85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		333BA942DFB3932E971A48577F28760B /* Pods-XQSheetDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQSheetDemo-Info.plist"; sourceTree = "<group>"; };
 		37F42B7B2EF19D6E48E02981E5C5C546 /* XQSelectSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQSelectSheet.m; path = XQSheet/XQSelectSheet.m; sourceTree = "<group>"; };
-		38AABE4EBE06CFA29044A55C39AE2DA2 /* XQGrandPopupFadeAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQGrandPopupFadeAnimation.m; path = XQGrandPopupView/XQGrandPopupFadeAnimation.m; sourceTree = "<group>"; };
 		3BC79D70D3D893090F22FD99C80ABBBA /* Pods-XQSheetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQSheetDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3FAA00A638F6AD182524F9430FBD2681 /* JHGrandPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupView.m; path = JHGrandPopupView/JHGrandPopupView.m; sourceTree = "<group>"; };
+		41E7065281A2DBA0524EF8D70BB47029 /* JHGrandPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupView.h; path = JHGrandPopupView/JHGrandPopupView.h; sourceTree = "<group>"; };
 		48EA0F500C4C7FC40D2106876F7B461E /* Pods-XQSheetDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQSheetDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		491017C5BD14B6B14BDBE0BA5087054D /* XQGrandPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQGrandPopupView.release.xcconfig; sourceTree = "<group>"; };
 		4D07F7D574E5370AD4BBE5BBDE8611A1 /* XQActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQActionSheet.h; path = XQSheet/XQActionSheet.h; sourceTree = "<group>"; };
 		60110FD2D1D48FFF656AE71BCF7704E7 /* XQSheet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQSheet-umbrella.h"; sourceTree = "<group>"; };
 		634D5A45EAF52C7945AFD440DFFBE7DE /* Pods-XQSheetDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XQSheetDemo-frameworks.sh"; sourceTree = "<group>"; };
 		665738822C350B3015CF4C1B24DF10ED /* Pods-XQSheetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQSheetDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		66DBC94B4C92A3235E33309CFA24C8FC /* JHGrandPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JHGrandPopupView-dummy.m"; sourceTree = "<group>"; };
+		72562C7AA895F631B2698A176B361A2E /* JHGrandPopupPresentAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupPresentAnimation.h; path = JHGrandPopupView/JHGrandPopupPresentAnimation.h; sourceTree = "<group>"; };
 		7602219015B14AAE02A696678858927F /* XQSheet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XQSheet-dummy.m"; sourceTree = "<group>"; };
 		766C7092A113A221584B3435427063A2 /* XQSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQSheet.m; path = XQSheet/XQSheet.m; sourceTree = "<group>"; };
 		7A13EF68836DAD4F53008A95DED4C244 /* XQSheetButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQSheetButton.h; path = XQSheet/XQSheetButton.h; sourceTree = "<group>"; };
 		7C8AA793DEF60CE0265BDC1FD53281D7 /* XQSheetButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQSheetButton.m; path = XQSheet/XQSheetButton.m; sourceTree = "<group>"; };
 		7D11946521AD4B08DDAB7AC70D31CA85 /* UIView+JKRoundingCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+JKRoundingCorners.m"; path = "XQSheet/UIView+JKRoundingCorners.m"; sourceTree = "<group>"; };
-		80B49214022EFBF5FC1B7B9A2B6CA8BB /* XQGrandPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQGrandPopupView-umbrella.h"; sourceTree = "<group>"; };
-		80F7E8F8B9A4EE94750AAAF66DA26B98 /* XQGrandPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQGrandPopupView.debug.xcconfig; sourceTree = "<group>"; };
-		820AC2BD7BFC13DD646AB1946CDDE736 /* XQGrandPopupPresentAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQGrandPopupPresentAnimation.m; path = XQGrandPopupView/XQGrandPopupPresentAnimation.m; sourceTree = "<group>"; };
-		83ED5B9F24EBFE7F4D93B3DF05D1C7EA /* XQGrandPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XQGrandPopupView.modulemap; sourceTree = "<group>"; };
-		86EA63C99B102F44F6822BC402E5D5D1 /* XQGrandPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQGrandPopupView.m; path = XQGrandPopupView/XQGrandPopupView.m; sourceTree = "<group>"; };
+		80EDE4FED59F57E1873AE144C15D94E0 /* JHGrandPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JHGrandPopupView.modulemap; sourceTree = "<group>"; };
 		86F1B5D596C6F337EFB68FA563F714AB /* XQSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQSheet.release.xcconfig; sourceTree = "<group>"; };
-		90C000E92984D1441A1235B6CE3FD778 /* XQGrandPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQGrandPopupView-prefix.pch"; sourceTree = "<group>"; };
+		87133D58DF6AFC1D816B1CDC8059B92C /* JHGrandPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JHGrandPopupView-prefix.pch"; sourceTree = "<group>"; };
 		969AEAFEEE29E1F765F4E852529598A5 /* UIView+JKRoundingCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+JKRoundingCorners.h"; path = "XQSheet/UIView+JKRoundingCorners.h"; sourceTree = "<group>"; };
-		98EB0414BECE1FF1E71FCE6E108F8051 /* XQGrandPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XQGrandPopupView-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA0939D9C3B26257DBBAAD6D2E0EB2F1 /* XQGrandPopupView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XQGrandPopupView; path = XQGrandPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF60B19D69C6073FB44EA56BEA1E690 /* JHGrandPopupFadeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHGrandPopupFadeAnimation.h; path = JHGrandPopupView/JHGrandPopupFadeAnimation.h; sourceTree = "<group>"; };
+		BBE212F1B785B4D5386941151DFC67B8 /* JHGrandPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JHGrandPopupView.debug.xcconfig; sourceTree = "<group>"; };
+		BE35A9C5E8B941D864D141F516EBA116 /* JHGrandPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JHGrandPopupView-umbrella.h"; sourceTree = "<group>"; };
 		BE3BA8A13DED7649A4200972892D7E9A /* XQSheet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XQSheet; path = XQSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C69EF4A646C9A71A43AD18422CBD7928 /* XQGrandPopupFadeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQGrandPopupFadeAnimation.h; path = XQGrandPopupView/XQGrandPopupFadeAnimation.h; sourceTree = "<group>"; };
+		BFCC88F8A63A22C685AA8C1988D29D9E /* JHGrandPopupFadeAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupFadeAnimation.m; path = JHGrandPopupView/JHGrandPopupFadeAnimation.m; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D628CF2322243C92BBCB77944F85B7AF /* XQSelectSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQSelectSheet.h; path = XQSheet/XQSelectSheet.h; sourceTree = "<group>"; };
 		D71BF80326F158B9BDE0DCE398B8D709 /* XQActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQActionSheet.m; path = XQSheet/XQActionSheet.m; sourceTree = "<group>"; };
-		DB36A800BD2C6F8610C80D6545DD5B7B /* XQGrandPopupPresentAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQGrandPopupPresentAnimation.h; path = XQGrandPopupView/XQGrandPopupPresentAnimation.h; sourceTree = "<group>"; };
+		D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JHGrandPopupView; path = JHGrandPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD5752324E290083CD24388AE157602 /* XQSheet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XQSheet.modulemap; sourceTree = "<group>"; };
-		E0A8ECB360DE3997AAF6D7673D5106DF /* XQGrandPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQGrandPopupView.h; path = XQGrandPopupView/XQGrandPopupView.h; sourceTree = "<group>"; };
+		E091EF710D957321453125EAE6189CAE /* JHGrandPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JHGrandPopupView.release.xcconfig; sourceTree = "<group>"; };
 		E724F531849A9F45B20F8AA8193DEE3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E9F9EBAAB6D04EA170ACC56EA9346EFF /* XQSheet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XQSheet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EA3D90B43F9F922399B3317ABB2B4781 /* Pods-XQSheetDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XQSheetDemo-umbrella.h"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		ED2D1CCEE8DF67585BB9FC881E6E751C /* XQSheet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XQSheet-Info.plist"; sourceTree = "<group>"; };
+		F9C6246FDF7DD5B4F8112A6E469282BA /* JHGrandPopupPresentAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHGrandPopupPresentAnimation.m; path = JHGrandPopupView/JHGrandPopupPresentAnimation.m; sourceTree = "<group>"; };
 		FA7959C0B342DF193170F8F6BFFC1D06 /* XQSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQSheet.debug.xcconfig; sourceTree = "<group>"; };
 		FB81DC68A72551043363DA26C263953E /* XQSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQSheet.h; path = XQSheet/XQSheet.h; sourceTree = "<group>"; };
 		FF23738137AC238C41AAC959E8DC5BC9 /* Pods-XQSheetDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XQSheetDemo.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		70CBE0815F119086A29390E3276B74C9 /* Frameworks */ = {
+		426AFF6FB0AFF8103EE5C12F40A67E9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C285E6DA162122F883FDBCB3F4872E /* Foundation.framework in Frameworks */,
+				EE15A2B06D16A2FBFD2E9F94C2562142 /* Foundation.framework in Frameworks */,
+				21E11C02CAC96680A64DAC5931FFE3BE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4A216409DB4A602B5BEBA72AE154DA2 /* Frameworks */ = {
+		59187B8CDD6BE3E9AC5C6BFBD98B474E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8501E48CB45DAF5CF1A4A3FEDA6958F /* Foundation.framework in Frameworks */,
-				15E755BC8DC385901FE4E757421C5906 /* UIKit.framework in Frameworks */,
+				DC32AAFCFDEE2BDDB341C4783B207B28 /* Foundation.framework in Frameworks */,
+				F179EEA362FB281616577F3BB23C8B1D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF200086388463D1122D5F5636B8ABEA /* Frameworks */ = {
+		DA3B48582BD753B75DCF3419F7819486 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AFCA1C4DF6920171B8F0419697A84B9 /* Foundation.framework in Frameworks */,
-				C2FB7C521A7C724DA70C0CADE504ABC0 /* UIKit.framework in Frameworks */,
+				F060958C9DEACF409AA72052A4AFC6AC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +179,24 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		3135A1754FF048256402C3431C856269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView */,
+				1FF3C47CECFE001FFC7172ABAB7D6339 /* Pods-XQSheetDemo */,
+				BE3BA8A13DED7649A4200972892D7E9A /* XQSheet */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B83DB5BA665056CB4D7201010629A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87675CE330661D51EDA7C9BEE2C37584 /* JHGrandPopupView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		585C0037F4B914B9F5CEB076CD070D90 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,27 +239,34 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		929E1B4833BE5C2705E62B9B8A016515 /* Support Files */ = {
+		87675CE330661D51EDA7C9BEE2C37584 /* JHGrandPopupView */ = {
 			isa = PBXGroup;
 			children = (
-				83ED5B9F24EBFE7F4D93B3DF05D1C7EA /* XQGrandPopupView.modulemap */,
-				21B17840CD783060F4176F25F838BD93 /* XQGrandPopupView-dummy.m */,
-				98EB0414BECE1FF1E71FCE6E108F8051 /* XQGrandPopupView-Info.plist */,
-				90C000E92984D1441A1235B6CE3FD778 /* XQGrandPopupView-prefix.pch */,
-				80B49214022EFBF5FC1B7B9A2B6CA8BB /* XQGrandPopupView-umbrella.h */,
-				80F7E8F8B9A4EE94750AAAF66DA26B98 /* XQGrandPopupView.debug.xcconfig */,
-				491017C5BD14B6B14BDBE0BA5087054D /* XQGrandPopupView.release.xcconfig */,
+				ACF60B19D69C6073FB44EA56BEA1E690 /* JHGrandPopupFadeAnimation.h */,
+				BFCC88F8A63A22C685AA8C1988D29D9E /* JHGrandPopupFadeAnimation.m */,
+				72562C7AA895F631B2698A176B361A2E /* JHGrandPopupPresentAnimation.h */,
+				F9C6246FDF7DD5B4F8112A6E469282BA /* JHGrandPopupPresentAnimation.m */,
+				41E7065281A2DBA0524EF8D70BB47029 /* JHGrandPopupView.h */,
+				3FAA00A638F6AD182524F9430FBD2681 /* JHGrandPopupView.m */,
+				A3979590E857A56D82EED676FD6C5439 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/XQGrandPopupView";
+			name = JHGrandPopupView;
+			path = JHGrandPopupView;
 			sourceTree = "<group>";
 		};
-		B361C05252FD3DFC03F672AC36978FF6 /* Pods */ = {
+		A3979590E857A56D82EED676FD6C5439 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC803D59CAE0B79FED63A3962645777B /* XQGrandPopupView */,
+				80EDE4FED59F57E1873AE144C15D94E0 /* JHGrandPopupView.modulemap */,
+				66DBC94B4C92A3235E33309CFA24C8FC /* JHGrandPopupView-dummy.m */,
+				016DDB8E5409B3D5B607B6938FCCDA1E /* JHGrandPopupView-Info.plist */,
+				87133D58DF6AFC1D816B1CDC8059B92C /* JHGrandPopupView-prefix.pch */,
+				BE35A9C5E8B941D864D141F516EBA116 /* JHGrandPopupView-umbrella.h */,
+				BBE212F1B785B4D5386941151DFC67B8 /* JHGrandPopupView.debug.xcconfig */,
+				E091EF710D957321453125EAE6189CAE /* JHGrandPopupView.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/JHGrandPopupView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -250,20 +275,10 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				8205BFE3BEEA63F8E232AF61383EBE5E /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				B361C05252FD3DFC03F672AC36978FF6 /* Pods */,
-				F4F8EEA2BC616D31654F89A1BC28F287 /* Products */,
+				39B83DB5BA665056CB4D7201010629A6 /* Pods */,
+				3135A1754FF048256402C3431C856269 /* Products */,
 				585C0037F4B914B9F5CEB076CD070D90 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		F4F8EEA2BC616D31654F89A1BC28F287 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1FF3C47CECFE001FFC7172ABAB7D6339 /* Pods-XQSheetDemo */,
-				AA0939D9C3B26257DBBAAD6D2E0EB2F1 /* XQGrandPopupView */,
-				BE3BA8A13DED7649A4200972892D7E9A /* XQSheet */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F96D2F49474D6C81F4AFFA5F2C458591 /* Support Files */ = {
@@ -281,73 +296,76 @@
 			path = "XQSheetDemo/Pods/Target Support Files/XQSheet";
 			sourceTree = "<group>";
 		};
-		FC803D59CAE0B79FED63A3962645777B /* XQGrandPopupView */ = {
-			isa = PBXGroup;
-			children = (
-				C69EF4A646C9A71A43AD18422CBD7928 /* XQGrandPopupFadeAnimation.h */,
-				38AABE4EBE06CFA29044A55C39AE2DA2 /* XQGrandPopupFadeAnimation.m */,
-				DB36A800BD2C6F8610C80D6545DD5B7B /* XQGrandPopupPresentAnimation.h */,
-				820AC2BD7BFC13DD646AB1946CDDE736 /* XQGrandPopupPresentAnimation.m */,
-				E0A8ECB360DE3997AAF6D7673D5106DF /* XQGrandPopupView.h */,
-				86EA63C99B102F44F6822BC402E5D5D1 /* XQGrandPopupView.m */,
-				929E1B4833BE5C2705E62B9B8A016515 /* Support Files */,
-			);
-			name = XQGrandPopupView;
-			path = XQGrandPopupView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		19A2266642D6247FBDE3A8D8DE9E4B08 /* Headers */ = {
+		1417F42388D76DB6B64F7197D6408710 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE399011B955ED8977406554C5708EE5 /* XQGrandPopupFadeAnimation.h in Headers */,
-				B895B2ED2B5E893415B12261B62E7F56 /* XQGrandPopupPresentAnimation.h in Headers */,
-				805957B55D3AE37369655566F5E876D2 /* XQGrandPopupView.h in Headers */,
-				464B93D9557B4265D6D08F53730FE9C2 /* XQGrandPopupView-umbrella.h in Headers */,
+				4165D9C3CA1AA6441CC6136E3E1B470F /* UIView+JKRoundingCorners.h in Headers */,
+				4E62CF0EDE5D5CBDCA655843BBCE00B0 /* XQActionSheet.h in Headers */,
+				7A06EC815849068F39577B270A29CAF2 /* XQSelectSheet.h in Headers */,
+				68B30C2107960848C0522275E5392429 /* XQSheet.h in Headers */,
+				F1F5E6F365BACDCFFD063288E01831DC /* XQSheet-umbrella.h in Headers */,
+				8BF70D529BC2769A0E478CE43E155B0F /* XQSheetButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B1D1487A9722B6C8E1EDADE75731DDB /* Headers */ = {
+		153F57FCB3605CBD2D18D5FF60B6A849 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				599F47CFD83D8239FBF4C62C2629DB8D /* Pods-XQSheetDemo-umbrella.h in Headers */,
+				8100622562AEB2E94E64AE7C87FA6AFC /* Pods-XQSheetDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDC0A3CB1F7B09C91A5F00B2E4D4919E /* Headers */ = {
+		E6C4200AC759DF9418CEFDA04087DA91 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA65F257EC68D021AF9D5F335D566C41 /* UIView+JKRoundingCorners.h in Headers */,
-				C65CA363AF64004999A924F8E7E21DD3 /* XQActionSheet.h in Headers */,
-				E81F472D28CEA7EF09BE329D6F2AF426 /* XQSelectSheet.h in Headers */,
-				F0F8EA49653B23AD98B2EEB74FADC81B /* XQSheet.h in Headers */,
-				73651E9E9A75747501699EC60C50745D /* XQSheet-umbrella.h in Headers */,
-				5827EA8618A8A9A29835A37C8733254C /* XQSheetButton.h in Headers */,
+				74E079110C65F3DC40F22691B58C8F83 /* JHGrandPopupFadeAnimation.h in Headers */,
+				B34279E780B67A18C200700E15205BEE /* JHGrandPopupPresentAnimation.h in Headers */,
+				EDAC6BDEA2EC3B0D660D1FC513B998C9 /* JHGrandPopupView.h in Headers */,
+				DCF3BD28B36D5FCD19660F2F689EAA3C /* JHGrandPopupView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		801D258B8D16FB4F84C3FBA933BB035F /* Pods-XQSheetDemo */ = {
+		7761D6457FC86795C59BCFDF08A7CA36 /* JHGrandPopupView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F65762CFEDA2B1574ECC9CF9674D4E6A /* Build configuration list for PBXNativeTarget "Pods-XQSheetDemo" */;
+			buildConfigurationList = 496F6352C1A1F65E845D7D33182C5FB9 /* Build configuration list for PBXNativeTarget "JHGrandPopupView" */;
 			buildPhases = (
-				3B1D1487A9722B6C8E1EDADE75731DDB /* Headers */,
-				9A3D716865A72A34A56E2343320EFDA3 /* Sources */,
-				70CBE0815F119086A29390E3276B74C9 /* Frameworks */,
-				D93BF99061815C1EC7943E96489DC92B /* Resources */,
+				E6C4200AC759DF9418CEFDA04087DA91 /* Headers */,
+				0782D71385E91DD2AD8F2EADE657B322 /* Sources */,
+				426AFF6FB0AFF8103EE5C12F40A67E9C /* Frameworks */,
+				115A1BFA117EBBCE143D1D162174D065 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E9CAAFDAD9231127189D118F90EF200B /* PBXTargetDependency */,
-				B258479FAF84945B3A073795F758CC8F /* PBXTargetDependency */,
+			);
+			name = JHGrandPopupView;
+			productName = JHGrandPopupView;
+			productReference = D74DBED2519E96BC4B635C5F20F5F870 /* JHGrandPopupView */;
+			productType = "com.apple.product-type.framework";
+		};
+		801D258B8D16FB4F84C3FBA933BB035F /* Pods-XQSheetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8A852269A67E03A2FA85E12A570C3E /* Build configuration list for PBXNativeTarget "Pods-XQSheetDemo" */;
+			buildPhases = (
+				153F57FCB3605CBD2D18D5FF60B6A849 /* Headers */,
+				A1BD287000ADD739B607444AB3FD875B /* Sources */,
+				DA3B48582BD753B75DCF3419F7819486 /* Frameworks */,
+				0DFC68A78F2AB81BA7DDD005A9755FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				703E9B86F80774CFBCF83D0E78F60C55 /* PBXTargetDependency */,
+				443B2DE2BB26D031F7BBF65C1C7B8685 /* PBXTargetDependency */,
 			);
 			name = "Pods-XQSheetDemo";
 			productName = Pods_XQSheetDemo;
@@ -356,39 +374,21 @@
 		};
 		8FFA3FBD2ABA046F87EAA1F6562946CA /* XQSheet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 790FAFAD31B4178281B37AA4645A2A71 /* Build configuration list for PBXNativeTarget "XQSheet" */;
+			buildConfigurationList = 8FD8CA88890A04CE42DD6B5378F35131 /* Build configuration list for PBXNativeTarget "XQSheet" */;
 			buildPhases = (
-				FDC0A3CB1F7B09C91A5F00B2E4D4919E /* Headers */,
-				C97B3A022AEB77D7E2DACF0BC34FF89E /* Sources */,
-				CF200086388463D1122D5F5636B8ABEA /* Frameworks */,
-				A411CD8FC8BCCAFE48DADC7781F1970A /* Resources */,
+				1417F42388D76DB6B64F7197D6408710 /* Headers */,
+				BF9A41BE81A4D9779020119A193D715D /* Sources */,
+				59187B8CDD6BE3E9AC5C6BFBD98B474E /* Frameworks */,
+				B5975BE947F0782BBF43EAE16BBC9ABD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A5E502F93276CD43CABC13CC48620A6F /* PBXTargetDependency */,
+				3D4D6E0D0B685FC80F0488279A228089 /* PBXTargetDependency */,
 			);
 			name = XQSheet;
 			productName = XQSheet;
 			productReference = BE3BA8A13DED7649A4200972892D7E9A /* XQSheet */;
-			productType = "com.apple.product-type.framework";
-		};
-		FD3454DA66E7FFE9B322B15E236C4A36 /* XQGrandPopupView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DC5C37E42560034C5D1367F1D55F228 /* Build configuration list for PBXNativeTarget "XQGrandPopupView" */;
-			buildPhases = (
-				19A2266642D6247FBDE3A8D8DE9E4B08 /* Headers */,
-				92DE9CE4D9C703CA133097894145066D /* Sources */,
-				A4A216409DB4A602B5BEBA72AE154DA2 /* Frameworks */,
-				266926FBCC5515BEF26F4B0DDED9B977 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = XQGrandPopupView;
-			productName = XQGrandPopupView;
-			productReference = AA0939D9C3B26257DBBAAD6D2E0EB2F1 /* XQGrandPopupView */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -409,33 +409,33 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F4F8EEA2BC616D31654F89A1BC28F287 /* Products */;
+			productRefGroup = 3135A1754FF048256402C3431C856269 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7761D6457FC86795C59BCFDF08A7CA36 /* JHGrandPopupView */,
 				801D258B8D16FB4F84C3FBA933BB035F /* Pods-XQSheetDemo */,
-				FD3454DA66E7FFE9B322B15E236C4A36 /* XQGrandPopupView */,
 				8FFA3FBD2ABA046F87EAA1F6562946CA /* XQSheet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		266926FBCC5515BEF26F4B0DDED9B977 /* Resources */ = {
+		0DFC68A78F2AB81BA7DDD005A9755FA8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A411CD8FC8BCCAFE48DADC7781F1970A /* Resources */ = {
+		115A1BFA117EBBCE143D1D162174D065 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D93BF99061815C1EC7943E96489DC92B /* Resources */ = {
+		B5975BE947F0782BBF43EAE16BBC9ABD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -445,128 +445,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		92DE9CE4D9C703CA133097894145066D /* Sources */ = {
+		0782D71385E91DD2AD8F2EADE657B322 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19D5EC450CE8BB0CA257750B84BFD25C /* XQGrandPopupFadeAnimation.m in Sources */,
-				3149989A516E179FF45EF2F0F46A35F5 /* XQGrandPopupPresentAnimation.m in Sources */,
-				F2F2A5AB2E9621709A6DA042A67B22E0 /* XQGrandPopupView.m in Sources */,
-				5E5841FED3D257D1A18CCB3CBBC1DCA5 /* XQGrandPopupView-dummy.m in Sources */,
+				91EA92FE9E2595693C5565E520C11D68 /* JHGrandPopupFadeAnimation.m in Sources */,
+				8C91AA49989BC6E90759D84E9EA12B9C /* JHGrandPopupPresentAnimation.m in Sources */,
+				2425B4070C192A1C862D8A8F7BE6E8E9 /* JHGrandPopupView.m in Sources */,
+				6C173D10CC1FD34998277968247E9C65 /* JHGrandPopupView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A3D716865A72A34A56E2343320EFDA3 /* Sources */ = {
+		A1BD287000ADD739B607444AB3FD875B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D661F1B30AFB06D287A89ECC4CF296 /* Pods-XQSheetDemo-dummy.m in Sources */,
+				A77C9668F83871E05347753461968D5A /* Pods-XQSheetDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C97B3A022AEB77D7E2DACF0BC34FF89E /* Sources */ = {
+		BF9A41BE81A4D9779020119A193D715D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CABB88AE50B85BD61B7F59FDB8F7289 /* UIView+JKRoundingCorners.m in Sources */,
-				0BC4D1C7C6085F25715A185FC5B28E1E /* XQActionSheet.m in Sources */,
-				BA2E975F01D488149AC1F8A9A9B65804 /* XQSelectSheet.m in Sources */,
-				EA7B120003B358F11CD271A33137000D /* XQSheet.m in Sources */,
-				AA0867EEC15BFA69F0080F9C206650EA /* XQSheet-dummy.m in Sources */,
-				5DDDC2618AB7C0E245351CB637193E5F /* XQSheetButton.m in Sources */,
+				D17EE0951FCE8049D9C29E90871166BD /* UIView+JKRoundingCorners.m in Sources */,
+				A187E6898525026709F23440E0F8893A /* XQActionSheet.m in Sources */,
+				865E72B8C8FC4B60CC1AC4B4C2F51ACB /* XQSelectSheet.m in Sources */,
+				7E2DF832DDECCE4F539D41E65912FA00 /* XQSheet.m in Sources */,
+				1A98932DB2C6FD195E8BB286FF31B7B1 /* XQSheet-dummy.m in Sources */,
+				0CA751544D545970C95024B265E276C3 /* XQSheetButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A5E502F93276CD43CABC13CC48620A6F /* PBXTargetDependency */ = {
+		3D4D6E0D0B685FC80F0488279A228089 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = XQGrandPopupView;
-			target = FD3454DA66E7FFE9B322B15E236C4A36 /* XQGrandPopupView */;
-			targetProxy = 3AF8550FC802DB189E1E075E07FAF5CB /* PBXContainerItemProxy */;
+			name = JHGrandPopupView;
+			target = 7761D6457FC86795C59BCFDF08A7CA36 /* JHGrandPopupView */;
+			targetProxy = 73B04D371F2CF25745343FE4AE716E86 /* PBXContainerItemProxy */;
 		};
-		B258479FAF84945B3A073795F758CC8F /* PBXTargetDependency */ = {
+		443B2DE2BB26D031F7BBF65C1C7B8685 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XQSheet;
 			target = 8FFA3FBD2ABA046F87EAA1F6562946CA /* XQSheet */;
-			targetProxy = 8A41C3F6C4146AA50389AB3899DC03CF /* PBXContainerItemProxy */;
+			targetProxy = 1787CBCB0C496B0FDDF6E7FDAC83F85E /* PBXContainerItemProxy */;
 		};
-		E9CAAFDAD9231127189D118F90EF200B /* PBXTargetDependency */ = {
+		703E9B86F80774CFBCF83D0E78F60C55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = XQGrandPopupView;
-			target = FD3454DA66E7FFE9B322B15E236C4A36 /* XQGrandPopupView */;
-			targetProxy = 9B0264216D2A6FDE7B089E870385A83D /* PBXContainerItemProxy */;
+			name = JHGrandPopupView;
+			target = 7761D6457FC86795C59BCFDF08A7CA36 /* JHGrandPopupView */;
+			targetProxy = D5A525D90FEBB34022C11D0965726540 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08617C15C8555ECD7710BA38D8CD880A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 491017C5BD14B6B14BDBE0BA5087054D /* XQGrandPopupView.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XQGrandPopupView/XQGrandPopupView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XQGrandPopupView/XQGrandPopupView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XQGrandPopupView/XQGrandPopupView.modulemap";
-				PRODUCT_MODULE_NAME = XQGrandPopupView;
-				PRODUCT_NAME = XQGrandPopupView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0C21BDE005ED57A84EF207EEDEE8115E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80F7E8F8B9A4EE94750AAAF66DA26B98 /* XQGrandPopupView.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XQGrandPopupView/XQGrandPopupView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XQGrandPopupView/XQGrandPopupView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XQGrandPopupView/XQGrandPopupView.modulemap";
-				PRODUCT_MODULE_NAME = XQGrandPopupView;
-				PRODUCT_NAME = XQGrandPopupView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1761046D6C5DA49290F6DF710DC74897 /* Release */ = {
+		20E9527AEF3F584DDDBAC67E01893BEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BC79D70D3D893090F22FD99C80ABBBA /* Pods-XQSheetDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -577,7 +517,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo.modulemap";
@@ -595,7 +535,197 @@
 			};
 			name = Release;
 		};
-		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+		63C8730D90B4F024FCB590799D2921C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E091EF710D957321453125EAE6189CAE /* JHGrandPopupView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JHGrandPopupView/JHGrandPopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView.modulemap";
+				PRODUCT_MODULE_NAME = JHGrandPopupView;
+				PRODUCT_NAME = JHGrandPopupView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		788C81BF63AADDF50E2562FF2A1ABA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665738822C350B3015CF4C1B24DF10ED /* Pods-XQSheetDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A34310D4E6F0FE38D21CCB55FAC3EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F1B5D596C6F337EFB68FA563F714AB /* XQSheet.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XQSheet/XQSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XQSheet/XQSheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XQSheet/XQSheet.modulemap";
+				PRODUCT_MODULE_NAME = XQSheet;
+				PRODUCT_NAME = XQSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		955EA6A14C484891CB82F6B407D62240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7959C0B342DF193170F8F6BFFC1D06 /* XQSheet.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XQSheet/XQSheet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XQSheet/XQSheet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XQSheet/XQSheet.modulemap";
+				PRODUCT_MODULE_NAME = XQSheet;
+				PRODUCT_NAME = XQSheet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -648,7 +778,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -661,11 +791,11 @@
 			};
 			name = Debug;
 		};
-		511B71F3203929A23024AD4AEE30A74E /* Debug */ = {
+		D3EBCB4B3467F58DDB51BD8E518C5511 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 665738822C350B3015CF4C1B24DF10ED /* Pods-XQSheetDemo.debug.xcconfig */;
+			baseConfigurationReference = BBE212F1B785B4D5386941151DFC67B8 /* JHGrandPopupView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -674,45 +804,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JHGrandPopupView/JHGrandPopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XQSheetDemo/Pods-XQSheetDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6349AFF83D41B4AB40C01ED2E2F49C0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA7959C0B342DF193170F8F6BFFC1D06 /* XQSheet.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XQSheet/XQSheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XQSheet/XQSheet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XQSheet/XQSheet.modulemap";
-				PRODUCT_MODULE_NAME = XQSheet;
-				PRODUCT_NAME = XQSheet;
+				MODULEMAP_FILE = "Target Support Files/JHGrandPopupView/JHGrandPopupView.modulemap";
+				PRODUCT_MODULE_NAME = JHGrandPopupView;
+				PRODUCT_NAME = JHGrandPopupView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -722,99 +821,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		B3B699151490649F81D3E6C10E185861 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86F1B5D596C6F337EFB68FA563F714AB /* XQSheet.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XQSheet/XQSheet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XQSheet/XQSheet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XQSheet/XQSheet.modulemap";
-				PRODUCT_MODULE_NAME = XQSheet;
-				PRODUCT_NAME = XQSheet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -822,35 +828,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
-				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		790FAFAD31B4178281B37AA4645A2A71 /* Build configuration list for PBXNativeTarget "XQSheet" */ = {
+		496F6352C1A1F65E845D7D33182C5FB9 /* Build configuration list for PBXNativeTarget "JHGrandPopupView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6349AFF83D41B4AB40C01ED2E2F49C0E /* Debug */,
-				B3B699151490649F81D3E6C10E185861 /* Release */,
+				D3EBCB4B3467F58DDB51BD8E518C5511 /* Debug */,
+				63C8730D90B4F024FCB590799D2921C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DC5C37E42560034C5D1367F1D55F228 /* Build configuration list for PBXNativeTarget "XQGrandPopupView" */ = {
+		8FD8CA88890A04CE42DD6B5378F35131 /* Build configuration list for PBXNativeTarget "XQSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C21BDE005ED57A84EF207EEDEE8115E /* Debug */,
-				08617C15C8555ECD7710BA38D8CD880A /* Release */,
+				955EA6A14C484891CB82F6B407D62240 /* Debug */,
+				7A34310D4E6F0FE38D21CCB55FAC3EE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F65762CFEDA2B1574ECC9CF9674D4E6A /* Build configuration list for PBXNativeTarget "Pods-XQSheetDemo" */ = {
+		AC8A852269A67E03A2FA85E12A570C3E /* Build configuration list for PBXNativeTarget "Pods-XQSheetDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				511B71F3203929A23024AD4AEE30A74E /* Debug */,
-				1761046D6C5DA49290F6DF710DC74897 /* Release */,
+				788C81BF63AADDF50E2562FF2A1ABA68 /* Debug */,
+				20E9527AEF3F584DDDBAC67E01893BEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

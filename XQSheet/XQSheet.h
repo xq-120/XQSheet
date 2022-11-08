@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <XQGrandPopupView/XQGrandPopupView.h>
+#import <JHGrandPopupView/JHGrandPopupView.h>
 
 typedef NS_ENUM(NSInteger, XQSheetType) {
     XQSheetTypeSelect = 0, //默认样式
     XQSheetTypeAction //仿系统样式
 };
 
-@interface XQSheet : XQGrandPopupView
+@interface XQSheet : JHGrandPopupView
 {
    @protected NSMutableArray *_buttons;
 }
