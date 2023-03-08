@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, XQSheetType) {
 
 @interface XQSheet : JHGrandPopupView
 {
-   @protected NSMutableArray *_buttons;
+   @package NSMutableArray *_buttons;
 }
 
 @property (nonatomic, strong, readonly) UILabel *sheetTitleLabel;
